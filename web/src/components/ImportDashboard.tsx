@@ -56,6 +56,8 @@ export const ImportDashboard: React.FC = () => {
   const [forceReProcess, setForceReProcess] = useState<boolean>(false);
   const [uploadProgress, setUploadProgress] = useState<string>('');
 
+  const [uploadFolder, setUploadFolder] = useState<string>('General');
+
   const fetchManifest = async () => {
     try {
       const res = await fetch('http://localhost:5000/api/manifest');
@@ -193,7 +195,8 @@ export const ImportDashboard: React.FC = () => {
 
       const fileMetaPromises = pdfFiles.map(async (file) => {
         const hash = await calculateFileHash(file);
-        const relativePath = file.webkitRelativePath || file.name;
+        const folderPrefix = uploadFolder ? `${uploadFolder.trim()}/` : '';
+        const relativePath = file.webkitRelativePath || `${folderPrefix}${file.name}`;
         return {
           fileName: file.name,
           sizeBytes: file.size,
@@ -270,12 +273,15 @@ export const ImportDashboard: React.FC = () => {
           reader.readAsDataURL(file);
         });
 
+        const folderPrefix = uploadFolder ? `${uploadFolder.trim()}/` : '';
+        const targetRelPath = file.webkitRelativePath || `${folderPrefix}${file.name}`;
+
         const uploadRes = await fetch('http://localhost:5000/api/upload', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             fileName: file.name,
-            relativePath: (file.webkitRelativePath || file.name).replace(/\\/g, '/'),
+            relativePath: targetRelPath.replace(/\\/g, '/'),
             sha256: meta.sha256,
             fileData: base64Data
           })
@@ -493,6 +499,25 @@ export const ImportDashboard: React.FC = () => {
         {/* Left Side: Actions & Upload */}
         <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <strong style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Nhập tài liệu PDF</strong>
+
+          {/* Folder Target Selection */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            <label className="form-label" style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-secondary)' }}>Thư mục đích (Folder)</label>
+            <input 
+              type="text"
+              className="input"
+              style={{ fontSize: '0.8rem', height: '32px' }}
+              list="manifest-existing-folders"
+              placeholder="Nhập tên thư mục mới hoặc chọn..."
+              value={uploadFolder}
+              onChange={(e) => setUploadFolder(e.target.value)}
+            />
+            <datalist id="manifest-existing-folders">
+              {manifest?.folders.map((f: any) => (
+                <option key={f.folderId} value={f.folderName} />
+              ))}
+            </datalist>
+          </div>
           
           {/* Real Input Selectors */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

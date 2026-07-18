@@ -455,18 +455,19 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ onStartSingleQuestio
                 {/* Skill */}
                 <div className="form-group">
                   <label className="form-label">Kỹ năng (Skill)</label>
-                  <select 
-                    className="select" 
+                  <input 
+                    type="text"
+                    className="input" 
+                    list="existing-skills"
+                    placeholder="Chọn hoặc gõ tên kỹ năng mới..."
                     value={editForm.skill || ''}
                     onChange={e => setEditForm({ ...editForm, skill: e.target.value })}
-                  >
+                  />
+                  <datalist id="existing-skills">
                     {skills.map(sk => (
-                      <option key={sk} value={sk}>{sk}</option>
+                      <option key={sk} value={sk} />
                     ))}
-                    {!skills.includes(editForm.skill || '') && editForm.skill && (
-                      <option value={editForm.skill}>{editForm.skill}</option>
-                    )}
-                  </select>
+                  </datalist>
                 </div>
                 {/* Correct Reason */}
                 <div className="form-group">
