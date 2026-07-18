@@ -1,0 +1,1860 @@
+{
+  "importId": "prepforge-import-1784311427",
+  "sourceRoot": "D:/PrepForge",
+  "summary": {
+    "totalFolders": 7,
+    "totalPdfFiles": 199,
+    "totalBytes": 123724373,
+    "duplicateCount": 0,
+    "duplicates": []
+  },
+  "folders": [
+    {
+      "folderId": "coe-textual",
+      "folderName": "COE TEXTUAL",
+      "relativePath": "COE TEXTUAL",
+      "suggestedSkill": "Coe Textual",
+      "files": [
+        {
+          "fileName": "10.1.pdf",
+          "relativePath": "COE TEXTUAL/10.1.pdf",
+          "sizeBytes": 664537,
+          "sha256": "7f89bf8b4d3b97bd53f35996106a059ea0f95c3e8234244fa987c9a301c84814",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/10.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/10.1.normalized.json"
+        },
+        {
+          "fileName": "10.2.pdf",
+          "relativePath": "COE TEXTUAL/10.2.pdf",
+          "sizeBytes": 673415,
+          "sha256": "0fe65ae0650a765438b4222a5c0bd67d3a01485572904357009b2347934b6fa2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/10.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/10.2.normalized.json"
+        },
+        {
+          "fileName": "10.3.pdf",
+          "relativePath": "COE TEXTUAL/10.3.pdf",
+          "sizeBytes": 713439,
+          "sha256": "b42c682f533a06c73d89e3b89f96d6e5a28bdda03062254448006acd19fb7899",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/10.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/10.3.normalized.json"
+        },
+        {
+          "fileName": "10.4.pdf",
+          "relativePath": "COE TEXTUAL/10.4.pdf",
+          "sizeBytes": 665784,
+          "sha256": "ab99bb800df9f6f664e6841ae1a7723f114d40d347b40a6c83b94921fb24153a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/10.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/10.4.normalized.json"
+        },
+        {
+          "fileName": "10.5.pdf",
+          "relativePath": "COE TEXTUAL/10.5.pdf",
+          "sizeBytes": 668192,
+          "sha256": "5d7ec3369a721a73ab5487c6adbf47979f87be00f962f3c07e918a226ab00a26",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/10.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/10.5.normalized.json"
+        },
+        {
+          "fileName": "9.1.pdf",
+          "relativePath": "COE TEXTUAL/9.1.pdf",
+          "sizeBytes": 674523,
+          "sha256": "61c2cb9471466f819cb8f77d6ad6fde8baa287875ede4ed6b0303eed27cf841a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/9.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/9.1.normalized.json"
+        },
+        {
+          "fileName": "9.2.pdf",
+          "relativePath": "COE TEXTUAL/9.2.pdf",
+          "sizeBytes": 687939,
+          "sha256": "8b93f3a8455ea98ed9d4b8514d17f7129c24361bf62c321c14816846ae378433",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/9.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/9.2.normalized.json"
+        },
+        {
+          "fileName": "9.3.pdf",
+          "relativePath": "COE TEXTUAL/9.3.pdf",
+          "sizeBytes": 696104,
+          "sha256": "4922b21af349a2379703617d73782615089a5cf813a7b5bec38f327f9ec8c212",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/9.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/9.3.normalized.json"
+        },
+        {
+          "fileName": "9.4.pdf",
+          "relativePath": "COE TEXTUAL/9.4.pdf",
+          "sizeBytes": 664191,
+          "sha256": "033ee22b7afd6ef6f32405a5d3a678292231654b51635726bc850dad1865cbe8",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/9.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/9.4.normalized.json"
+        },
+        {
+          "fileName": "9.5.pdf",
+          "relativePath": "COE TEXTUAL/9.5.pdf",
+          "sizeBytes": 662068,
+          "sha256": "2e7dc32bcda9fc86fb97989ecf78b5dba7b08878239920d317a065918c9fe01e",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/coe-textual/9.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/coe-textual/9.5.normalized.json"
+        }
+      ]
+    },
+    {
+      "folderId": "cross-text",
+      "folderName": "CROSS TEXT",
+      "relativePath": "CROSS TEXT",
+      "suggestedSkill": "Cross Text",
+      "files": [
+        {
+          "fileName": "34.1.pdf",
+          "relativePath": "CROSS TEXT/34.1.pdf",
+          "sizeBytes": 607052,
+          "sha256": "dd7ec43a1ef55e9afafb6653ef67f499a05b60669b3abe8aa2dde72b72b3575a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/34.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/34.1.normalized.json"
+        },
+        {
+          "fileName": "34.2.pdf",
+          "relativePath": "CROSS TEXT/34.2.pdf",
+          "sizeBytes": 654498,
+          "sha256": "6345a0003d009a7425a6787c0532782d73cf66d7c76910df86f911c36425c726",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/34.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/34.2.normalized.json"
+        },
+        {
+          "fileName": "34.3.pdf",
+          "relativePath": "CROSS TEXT/34.3.pdf",
+          "sizeBytes": 639211,
+          "sha256": "c32df8e691deddc0d0b2b7f26de999ff13e88ba0e1a9f97b36980e0dfb594868",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/34.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/34.3.normalized.json"
+        },
+        {
+          "fileName": "34.4.pdf",
+          "relativePath": "CROSS TEXT/34.4.pdf",
+          "sizeBytes": 641668,
+          "sha256": "49b17d35649868b585073d1f35aa567c328802a21963cc72b8680551367454f2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/34.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/34.4.normalized.json"
+        },
+        {
+          "fileName": "34.5.pdf",
+          "relativePath": "CROSS TEXT/34.5.pdf",
+          "sizeBytes": 635267,
+          "sha256": "b6ea698138099f6beabcb5c07f5943fe13c2fe31882af6c96de7cc854402255b",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/34.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/34.5.normalized.json"
+        },
+        {
+          "fileName": "35.1.pdf",
+          "relativePath": "CROSS TEXT/35.1.pdf",
+          "sizeBytes": 631668,
+          "sha256": "6f4472e70db71d1fb9d8fe513d5f8564fb69b53f6f5c1fadba06acee39e55850",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/35.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/35.1.normalized.json"
+        },
+        {
+          "fileName": "35.2.pdf",
+          "relativePath": "CROSS TEXT/35.2.pdf",
+          "sizeBytes": 648426,
+          "sha256": "09757d586b2f82d310a5a9e6ce7ee73f2dad0c61f51159a3c14e636a59318bfb",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/35.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/35.2.normalized.json"
+        },
+        {
+          "fileName": "35.3.pdf",
+          "relativePath": "CROSS TEXT/35.3.pdf",
+          "sizeBytes": 636310,
+          "sha256": "9160a7bbe439fa90256c3b4d2a43a185935968754f0c530cf85392b0d72855cf",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/35.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/35.3.normalized.json"
+        },
+        {
+          "fileName": "35.4.pdf",
+          "relativePath": "CROSS TEXT/35.4.pdf",
+          "sizeBytes": 638540,
+          "sha256": "d993287be8ffce30ad1b9cc22e441446471bc29f423efa5029d1cc588ac3a53f",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/35.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/35.4.normalized.json"
+        },
+        {
+          "fileName": "35.5.pdf",
+          "relativePath": "CROSS TEXT/35.5.pdf",
+          "sizeBytes": 637645,
+          "sha256": "11fb0afd42ec3fa005507eefe73e8b30fee6ab40d048593e63fa453f080c4865",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/35.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/35.5.normalized.json"
+        },
+        {
+          "fileName": "36.1.pdf",
+          "relativePath": "CROSS TEXT/36.1.pdf",
+          "sizeBytes": 617749,
+          "sha256": "50886f903968c45b797aef73150629afe929531a0727cd8a69a2d08b2dfe9ae3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/36.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/36.1.normalized.json"
+        },
+        {
+          "fileName": "36.2.pdf",
+          "relativePath": "CROSS TEXT/36.2.pdf",
+          "sizeBytes": 641130,
+          "sha256": "2e6e263c5c1155d1b69f423275d19e2cb73effd8be2a5c6aba4404df06bbe6c2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/36.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/36.2.normalized.json"
+        },
+        {
+          "fileName": "36.3.pdf",
+          "relativePath": "CROSS TEXT/36.3.pdf",
+          "sizeBytes": 616959,
+          "sha256": "d5a5fa146a09b35decdc630b405a192cfe5f56b20a9d275a46ad01c7d91f2f21",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/36.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/36.3.normalized.json"
+        },
+        {
+          "fileName": "36.4.pdf",
+          "relativePath": "CROSS TEXT/36.4.pdf",
+          "sizeBytes": 653531,
+          "sha256": "0b39140230a0771c2526bd0616b873a54aecc055372c8fe46eab166719962791",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/36.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/36.4.normalized.json"
+        },
+        {
+          "fileName": "36.5.pdf",
+          "relativePath": "CROSS TEXT/36.5.pdf",
+          "sizeBytes": 662464,
+          "sha256": "0510830864f4ce18b184315afbd99fa6771e4a637c1d344ae1d00c8d959342a5",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/cross-text/36.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/cross-text/36.5.normalized.json"
+        }
+      ]
+    },
+    {
+      "folderId": "inference",
+      "folderName": "INFERENCE",
+      "relativePath": "INFERENCE",
+      "suggestedSkill": "Inference",
+      "files": [
+        {
+          "fileName": "20.1.pdf",
+          "relativePath": "INFERENCE/20.1.pdf",
+          "sizeBytes": 656776,
+          "sha256": "0819c0c54c12d7c11d512c25cdf975573de6730a29759e5c244a4d89fab894b5",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/20.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/20.1.normalized.json"
+        },
+        {
+          "fileName": "20.2.pdf",
+          "relativePath": "INFERENCE/20.2.pdf",
+          "sizeBytes": 632241,
+          "sha256": "525aff698d7f7c3c6d91ba3fdedcc7ab44340b22518cd8813ed6b7f335fb126d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/20.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/20.2.normalized.json"
+        },
+        {
+          "fileName": "20.3.pdf",
+          "relativePath": "INFERENCE/20.3.pdf",
+          "sizeBytes": 653747,
+          "sha256": "fc747b4e10edb04c5547150a52a10044ca4747975612e8613bf0a96c079fd940",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/20.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/20.3.normalized.json"
+        },
+        {
+          "fileName": "20.4.pdf",
+          "relativePath": "INFERENCE/20.4.pdf",
+          "sizeBytes": 621063,
+          "sha256": "b2382d7d3910dbbbedabb167e540a11108ee2bddb8c52863219e3a2b7271c17d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/20.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/20.4.normalized.json"
+        },
+        {
+          "fileName": "20.5.pdf",
+          "relativePath": "INFERENCE/20.5.pdf",
+          "sizeBytes": 658005,
+          "sha256": "56c45c9f4c906b009dae2a1f164f93c77c273f4945886c44d4ccf774e1e46aae",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/20.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/20.5.normalized.json"
+        },
+        {
+          "fileName": "21.1.pdf",
+          "relativePath": "INFERENCE/21.1.pdf",
+          "sizeBytes": 662532,
+          "sha256": "aa21adc5f4d0cfa9c5e54d54ca25f2381a95c7aafd289c27d3fef5b583089ed2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/21.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/21.1.normalized.json"
+        },
+        {
+          "fileName": "21.2.pdf",
+          "relativePath": "INFERENCE/21.2.pdf",
+          "sizeBytes": 688491,
+          "sha256": "ea8220e7ffa492eb2efe6631b21b4f0c1cd5121836cd1877b78e0e4a56024531",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/21.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/21.2.normalized.json"
+        },
+        {
+          "fileName": "21.3.pdf",
+          "relativePath": "INFERENCE/21.3.pdf",
+          "sizeBytes": 636247,
+          "sha256": "a970a743e6b2c5002cbd8f1faaeb41af86e74b7e58e65d77efd2bbcaa21afedd",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/21.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/21.3.normalized.json"
+        },
+        {
+          "fileName": "21.4.pdf",
+          "relativePath": "INFERENCE/21.4.pdf",
+          "sizeBytes": 653454,
+          "sha256": "90481dd1abbe1247c6951ca0b2f247c0a4146f96994b3531b153d026d05ed704",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/21.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/21.4.normalized.json"
+        },
+        {
+          "fileName": "21.5.pdf",
+          "relativePath": "INFERENCE/21.5.pdf",
+          "sizeBytes": 668302,
+          "sha256": "3330d683c1b28e2cc47328d65412ec8c59ca0069e11fa368c54d976063e772be",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/21.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/21.5.normalized.json"
+        },
+        {
+          "fileName": "25.1.pdf",
+          "relativePath": "INFERENCE/25.1.pdf",
+          "sizeBytes": 650257,
+          "sha256": "1fec4e1761994fc914981c8d3655778c48b2452e0ba4bbe1c160c8f8c44dce49",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/25.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/25.1.normalized.json"
+        },
+        {
+          "fileName": "25.2.pdf",
+          "relativePath": "INFERENCE/25.2.pdf",
+          "sizeBytes": 653904,
+          "sha256": "0fd43d2f3d911427c6ba8d757864a723e0dc4d4a9574773c265cfc415ba2e169",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/25.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/25.2.normalized.json"
+        },
+        {
+          "fileName": "25.3.pdf",
+          "relativePath": "INFERENCE/25.3.pdf",
+          "sizeBytes": 671704,
+          "sha256": "fec39b7c6eb9f5f438722a254710b7e086f685293516472fd6da3c28d45c51c6",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/25.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/25.3.normalized.json"
+        },
+        {
+          "fileName": "25.4.pdf",
+          "relativePath": "INFERENCE/25.4.pdf",
+          "sizeBytes": 652755,
+          "sha256": "bec4d7ec4316531b0d9139a1622802ce2bb8b2959bbb88bf53b09e932383bfeb",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/25.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/25.4.normalized.json"
+        },
+        {
+          "fileName": "25.5.pdf",
+          "relativePath": "INFERENCE/25.5.pdf",
+          "sizeBytes": 555265,
+          "sha256": "8f706c8cdf3b012ad60ebd80bb0d51a59c5eec5e418038bdda8147c3f10ba4f0",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/inference/25.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/inference/25.5.normalized.json"
+        }
+      ]
+    },
+    {
+      "folderId": "literary",
+      "folderName": "LITERARY",
+      "relativePath": "LITERARY",
+      "suggestedSkill": "Literary",
+      "files": [
+        {
+          "fileName": "18.1.pdf",
+          "relativePath": "LITERARY/18.1.pdf",
+          "sizeBytes": 716711,
+          "sha256": "0771da0c672cbaf2834511b92cc5085a569b492665d62aa26351fae1e073f074",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/18.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/18.1.normalized.json"
+        },
+        {
+          "fileName": "18.2.pdf",
+          "relativePath": "LITERARY/18.2.pdf",
+          "sizeBytes": 660291,
+          "sha256": "91896fc9e43c7d992a610c50c5b889d897fabd22052be4d670c9f310e3166483",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/18.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/18.2.normalized.json"
+        },
+        {
+          "fileName": "18.3.pdf",
+          "relativePath": "LITERARY/18.3.pdf",
+          "sizeBytes": 671976,
+          "sha256": "62e2cf89f2e57a2e959396cf04f0b44f588f3029dcc171d30276990a689607e8",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/18.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/18.3.normalized.json"
+        },
+        {
+          "fileName": "18.4.pdf",
+          "relativePath": "LITERARY/18.4.pdf",
+          "sizeBytes": 685279,
+          "sha256": "bf83d7c5d8a840f6808de269add20b2ac2b57ae75858f4edfdea1f1742a653a0",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/18.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/18.4.normalized.json"
+        },
+        {
+          "fileName": "18.5.pdf",
+          "relativePath": "LITERARY/18.5.pdf",
+          "sizeBytes": 704982,
+          "sha256": "daa29a7d88e9de5784f1b18756f03f37f606cced98d2780a4ff123cc8ffe2625",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/18.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/18.5.normalized.json"
+        },
+        {
+          "fileName": "19.1.pdf",
+          "relativePath": "LITERARY/19.1.pdf",
+          "sizeBytes": 682364,
+          "sha256": "8607a20574930989b0b2ba4c914894fa57f437df47c9606a2e7642ff52d8b5fa",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/19.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/19.1.normalized.json"
+        },
+        {
+          "fileName": "19.2.pdf",
+          "relativePath": "LITERARY/19.2.pdf",
+          "sizeBytes": 672333,
+          "sha256": "87916506430d62923123453e523f39b4efb0898c909743e35a1c3c3230b585a2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/19.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/19.2.normalized.json"
+        },
+        {
+          "fileName": "19.3.pdf",
+          "relativePath": "LITERARY/19.3.pdf",
+          "sizeBytes": 709846,
+          "sha256": "4789d9efb8be74b3c1d8f465dd2784d328d6a205b0b16908763c040f7b44ce3e",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/19.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/19.3.normalized.json"
+        },
+        {
+          "fileName": "19.4.pdf",
+          "relativePath": "LITERARY/19.4.pdf",
+          "sizeBytes": 675739,
+          "sha256": "a0516053b978c355fbdb486ca4e378d3631c3c1e37c04db0afbd41a6ec5a5b63",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/19.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/19.4.normalized.json"
+        },
+        {
+          "fileName": "19.5.pdf",
+          "relativePath": "LITERARY/19.5.pdf",
+          "sizeBytes": 689091,
+          "sha256": "e453b887433cbcaf70ea942324afadf297fe4d633cd7da73a96f310ab90e63b0",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/literary/19.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/literary/19.5.normalized.json"
+        }
+      ]
+    },
+    {
+      "folderId": "main-idea",
+      "folderName": "MAIN IDEA",
+      "relativePath": "MAIN IDEA",
+      "suggestedSkill": "Main Idea",
+      "files": [
+        {
+          "fileName": "22.1.pdf",
+          "relativePath": "MAIN IDEA/22.1.pdf",
+          "sizeBytes": 658968,
+          "sha256": "f159a960ff6a2065598fa94fabb595d26bbca2f2d53705908060a9f639294f07",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/22.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/22.1.normalized.json"
+        },
+        {
+          "fileName": "22.2.pdf",
+          "relativePath": "MAIN IDEA/22.2.pdf",
+          "sizeBytes": 671992,
+          "sha256": "3f6ca7a7f88e7bb4b6a9fbe6dc0dd0e069944612f58b20e1e7128afcac4a511c",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/22.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/22.2.normalized.json"
+        },
+        {
+          "fileName": "22.3.pdf",
+          "relativePath": "MAIN IDEA/22.3.pdf",
+          "sizeBytes": 668162,
+          "sha256": "7aa060f2e721e03d21d808813eb09254968124a3afe3f4df371fbb4bf6fdd946",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/22.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/22.3.normalized.json"
+        },
+        {
+          "fileName": "22.4.pdf",
+          "relativePath": "MAIN IDEA/22.4.pdf",
+          "sizeBytes": 668266,
+          "sha256": "5bfb52161822d0a0206aab0941c9d87e80a3fa73a8228b84256f0feabb44c0b9",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/22.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/22.4.normalized.json"
+        },
+        {
+          "fileName": "22.5.pdf",
+          "relativePath": "MAIN IDEA/22.5.pdf",
+          "sizeBytes": 675355,
+          "sha256": "b8fe7fde5d4d9bab9d54b54597413167c4d4a4d52cef1f53157a0ed1580d51a2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/22.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/22.5.normalized.json"
+        },
+        {
+          "fileName": "23.1.pdf",
+          "relativePath": "MAIN IDEA/23.1.pdf",
+          "sizeBytes": 661252,
+          "sha256": "5472f513da2bec322e8d034d891859e382efec27dd8839ef9f46fc09fbb33969",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/23.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/23.1.normalized.json"
+        },
+        {
+          "fileName": "23.2.pdf",
+          "relativePath": "MAIN IDEA/23.2.pdf",
+          "sizeBytes": 655276,
+          "sha256": "0ad90b829262edbac6a864d480ab15126c39392bb24abc7234f3e06de77bb507",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/23.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/23.2.normalized.json"
+        },
+        {
+          "fileName": "23.3.pdf",
+          "relativePath": "MAIN IDEA/23.3.pdf",
+          "sizeBytes": 673635,
+          "sha256": "7d6548b2a22854bfe02583b5cd12719de35ba9a5559b4ca157525f0c15816633",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/23.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/23.3.normalized.json"
+        },
+        {
+          "fileName": "23.4.pdf",
+          "relativePath": "MAIN IDEA/23.4.pdf",
+          "sizeBytes": 664431,
+          "sha256": "0a5d1886ec4f8c379016112d3f23d36e873ccdb9c6054939ba79c0c04f17ded1",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/23.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/23.4.normalized.json"
+        },
+        {
+          "fileName": "23.5.pdf",
+          "relativePath": "MAIN IDEA/23.5.pdf",
+          "sizeBytes": 651231,
+          "sha256": "0925c559f9fdb8883579a36a8fe59b8d50664c6f1cfa9d5abd24e734e292d696",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/23.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/23.5.normalized.json"
+        },
+        {
+          "fileName": "24.1.pdf",
+          "relativePath": "MAIN IDEA/24.1.pdf",
+          "sizeBytes": 662065,
+          "sha256": "a396685cf47d83f9e6d1071b1727a4340be7070f484e85a8e53655a3818ea54e",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/24.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/24.1.normalized.json"
+        },
+        {
+          "fileName": "24.2.pdf",
+          "relativePath": "MAIN IDEA/24.2.pdf",
+          "sizeBytes": 675107,
+          "sha256": "36c892d5a55a6cb2745a6ca69ebd09b362925d63c56dc4105c34d7e553d3e0a3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/24.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/24.2.normalized.json"
+        },
+        {
+          "fileName": "24.3.pdf",
+          "relativePath": "MAIN IDEA/24.3.pdf",
+          "sizeBytes": 657776,
+          "sha256": "c87b9e486bc74b6ec05f08def1491e459833b07a865553057319c091fea73467",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/24.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/24.3.normalized.json"
+        },
+        {
+          "fileName": "24.4.pdf",
+          "relativePath": "MAIN IDEA/24.4.pdf",
+          "sizeBytes": 685292,
+          "sha256": "0e1164e008baae544ee6bb95a440bfb91b082e9ff4a6200841de448ac3c96863",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/24.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/24.4.normalized.json"
+        },
+        {
+          "fileName": "24.5.pdf",
+          "relativePath": "MAIN IDEA/24.5.pdf",
+          "sizeBytes": 684741,
+          "sha256": "75f9bc501beb2ac662c972b2f04f9685608b6bbaa34e94e6e5d4450e5ebd7a7d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/24.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/24.5.normalized.json"
+        },
+        {
+          "fileName": "24.6.pdf",
+          "relativePath": "MAIN IDEA/24.6.pdf",
+          "sizeBytes": 676292,
+          "sha256": "985a9697d51067bc397d60a6d99c251b0ea98f0a2f3a18e9107aa5b1328f5166",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/24.6.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/24.6.normalized.json"
+        },
+        {
+          "fileName": "26.1.pdf",
+          "relativePath": "MAIN IDEA/26.1.pdf",
+          "sizeBytes": 659292,
+          "sha256": "69a32abb4945d5d9a9b21d2afe8cfd4459431b8e3cb5b6dd6bbeed70e8403463",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/26.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/26.1.normalized.json"
+        },
+        {
+          "fileName": "26.2.pdf",
+          "relativePath": "MAIN IDEA/26.2.pdf",
+          "sizeBytes": 683289,
+          "sha256": "f07fd7e583fedeab318c5453cd98c1158845f2e1b17aa1e3867e33e2c848add6",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/26.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/26.2.normalized.json"
+        },
+        {
+          "fileName": "26.3.pdf",
+          "relativePath": "MAIN IDEA/26.3.pdf",
+          "sizeBytes": 673466,
+          "sha256": "bc9606ffb79c7911e9f51cdc6820a815dbcdf085911a6ef4720abb2d087c910c",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/26.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/26.3.normalized.json"
+        },
+        {
+          "fileName": "26.4.pdf",
+          "relativePath": "MAIN IDEA/26.4.pdf",
+          "sizeBytes": 688696,
+          "sha256": "3c95d9ceb1dd132874b0ec88c37b073fbdea023ce2f8f2e0deeda66ed610c443",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/26.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/26.4.normalized.json"
+        },
+        {
+          "fileName": "26.5.pdf",
+          "relativePath": "MAIN IDEA/26.5.pdf",
+          "sizeBytes": 661635,
+          "sha256": "2ff78603c8b0c3612b816549342852ae38be07d4394c69b7bac152afd5d5461d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/26.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/26.5.normalized.json"
+        },
+        {
+          "fileName": "27.1.pdf",
+          "relativePath": "MAIN IDEA/27.1.pdf",
+          "sizeBytes": 537234,
+          "sha256": "65266c140ddff0f673500db5206aaa19632e277fefb975c64ecdec2ca3044832",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/27.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/27.1.normalized.json"
+        },
+        {
+          "fileName": "27.2.pdf",
+          "relativePath": "MAIN IDEA/27.2.pdf",
+          "sizeBytes": 551262,
+          "sha256": "7f40a61d6ba7d62d471beb44bb920401dd06d378a1f47efdb6c60036ca2e74b5",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/27.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/27.2.normalized.json"
+        },
+        {
+          "fileName": "27.3.pdf",
+          "relativePath": "MAIN IDEA/27.3.pdf",
+          "sizeBytes": 520045,
+          "sha256": "d11b1ce4b42fa1b01adb911b233579c5eb9343235c64b9a4a45654ce09ad02bf",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/27.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/27.3.normalized.json"
+        },
+        {
+          "fileName": "27.4.pdf",
+          "relativePath": "MAIN IDEA/27.4.pdf",
+          "sizeBytes": 546645,
+          "sha256": "0adfc4c1b2cdb53d9eb8886f58c9f2005c001602382dd4087214b8e065565460",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/27.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/27.4.normalized.json"
+        },
+        {
+          "fileName": "27.5.pdf",
+          "relativePath": "MAIN IDEA/27.5.pdf",
+          "sizeBytes": 542375,
+          "sha256": "2e2c9f25730d0db41dafcd7260a73c2f80373fd6b8b1eededd9ea3be9de4e3af",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/27.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/27.5.normalized.json"
+        },
+        {
+          "fileName": "28.1.pdf",
+          "relativePath": "MAIN IDEA/28.1.pdf",
+          "sizeBytes": 526120,
+          "sha256": "5b0aaf0b694a95ae08ffac00275f5cbb0aa55eb9708901ba453eba91b2f7e72e",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/28.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/28.1.normalized.json"
+        },
+        {
+          "fileName": "28.2.pdf",
+          "relativePath": "MAIN IDEA/28.2.pdf",
+          "sizeBytes": 540061,
+          "sha256": "4325e5ec932e9a23a0f09ded47c50c14c61b7a02796962a493d4c888fd61a505",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/28.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/28.2.normalized.json"
+        },
+        {
+          "fileName": "28.3.pdf",
+          "relativePath": "MAIN IDEA/28.3.pdf",
+          "sizeBytes": 541948,
+          "sha256": "7f5c88aa2df72abbd992a29a2f24d8200076091446d7c1cbcda32444dd1003e3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/28.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/28.3.normalized.json"
+        },
+        {
+          "fileName": "28.4.pdf",
+          "relativePath": "MAIN IDEA/28.4.pdf",
+          "sizeBytes": 548407,
+          "sha256": "6cc693ef90c0799b649f64e955231bc38b344a93eccae9858c1c784588b9b4b5",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/28.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/28.4.normalized.json"
+        },
+        {
+          "fileName": "28.5.pdf",
+          "relativePath": "MAIN IDEA/28.5.pdf",
+          "sizeBytes": 534988,
+          "sha256": "8ee49640fdf5aef6a93896109dc77c93a60a1c09a9f9e1aa1d3690718997215a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/28.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/28.5.normalized.json"
+        },
+        {
+          "fileName": "29.1.pdf",
+          "relativePath": "MAIN IDEA/29.1.pdf",
+          "sizeBytes": 457312,
+          "sha256": "2eb00504e874ef81d5b98001dc9f8b90bd44ca8a2451a23a665a5139b151bcb3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.1.normalized.json"
+        },
+        {
+          "fileName": "29.10.pdf",
+          "relativePath": "MAIN IDEA/29.10.pdf",
+          "sizeBytes": 540970,
+          "sha256": "93c431be609f1ab99d52f1e30468a2b9add1a321bd3233ac91ce5bf9bdc24202",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.10.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.10.normalized.json"
+        },
+        {
+          "fileName": "29.2.pdf",
+          "relativePath": "MAIN IDEA/29.2.pdf",
+          "sizeBytes": 556736,
+          "sha256": "f8124542bf31af73060f4fdb7e7ca8c94b1025350f9a0a7cc56550de32425a51",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.2.normalized.json"
+        },
+        {
+          "fileName": "29.3.pdf",
+          "relativePath": "MAIN IDEA/29.3.pdf",
+          "sizeBytes": 549076,
+          "sha256": "fdcfda18f167b8700e1bb5edd3430e7bdb6612a44356e5232b790e09d085ead1",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.3.normalized.json"
+        },
+        {
+          "fileName": "29.4.pdf",
+          "relativePath": "MAIN IDEA/29.4.pdf",
+          "sizeBytes": 548179,
+          "sha256": "39db58644f7378a5cd08e681d46dbdd7943f7aadf91bdeb23b64d001ebee2702",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.4.normalized.json"
+        },
+        {
+          "fileName": "29.5.pdf",
+          "relativePath": "MAIN IDEA/29.5.pdf",
+          "sizeBytes": 556579,
+          "sha256": "eb004164f4efa094315448ed163f17fb2da734f75da5ae06e60372068c700fa3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.5.normalized.json"
+        },
+        {
+          "fileName": "29.6.pdf",
+          "relativePath": "MAIN IDEA/29.6.pdf",
+          "sizeBytes": 576867,
+          "sha256": "4fd0526d10e5124816a6b57c0d651170a9915e0b4362faeaf27c4e89e6bc22f2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.6.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.6.normalized.json"
+        },
+        {
+          "fileName": "29.7.pdf",
+          "relativePath": "MAIN IDEA/29.7.pdf",
+          "sizeBytes": 533765,
+          "sha256": "d4780e586168c69a82d5a78c681c7331ab367f590377ee500d23992937d0cab0",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.7.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.7.normalized.json"
+        },
+        {
+          "fileName": "29.8.pdf",
+          "relativePath": "MAIN IDEA/29.8.pdf",
+          "sizeBytes": 566955,
+          "sha256": "1b0b0e63040af5f3b90453594263f5cd3647971409cfe90219fe875150b97cbc",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.8.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.8.normalized.json"
+        },
+        {
+          "fileName": "29.9.pdf",
+          "relativePath": "MAIN IDEA/29.9.pdf",
+          "sizeBytes": 547316,
+          "sha256": "2ce2dc4d47552666f72174126fbf77ef3ff4a7ddd281e4537d6c1b8561721049",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/29.9.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/29.9.normalized.json"
+        },
+        {
+          "fileName": "30.1.pdf",
+          "relativePath": "MAIN IDEA/30.1.pdf",
+          "sizeBytes": 553252,
+          "sha256": "d2adfd99a65b5c0b83485c821fc77ca4d07e599feb195f95747a0c6a2a78b979",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/30.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/30.1.normalized.json"
+        },
+        {
+          "fileName": "30.2.pdf",
+          "relativePath": "MAIN IDEA/30.2.pdf",
+          "sizeBytes": 544857,
+          "sha256": "7f333c391404092026e53cfb24ca473b7ab24811b9abe9da6cbee76185fc35b4",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/30.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/30.2.normalized.json"
+        },
+        {
+          "fileName": "30.3.pdf",
+          "relativePath": "MAIN IDEA/30.3.pdf",
+          "sizeBytes": 526550,
+          "sha256": "253e8b19e9184f5024b7b72c8e96633ece8ff7bf11d9773d5e083c9dc1131f18",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/30.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/30.3.normalized.json"
+        },
+        {
+          "fileName": "30.4.pdf",
+          "relativePath": "MAIN IDEA/30.4.pdf",
+          "sizeBytes": 544199,
+          "sha256": "7fa97d7d65ba76f1037dc5215a781ac06c607c5d15af31a0bf5f9bb5e3281390",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/30.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/30.4.normalized.json"
+        },
+        {
+          "fileName": "30.5.pdf",
+          "relativePath": "MAIN IDEA/30.5.pdf",
+          "sizeBytes": 540900,
+          "sha256": "98ec204400065e839720fe383813fae72b9f7ff19ecadc528d56c5ad18e0d219",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/main-idea/30.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/main-idea/30.5.normalized.json"
+        }
+      ]
+    },
+    {
+      "folderId": "word-in-context",
+      "folderName": "WORD IN CONTEXT",
+      "relativePath": "WORD IN CONTEXT",
+      "suggestedSkill": "Word In Context",
+      "files": [
+        {
+          "fileName": "1.1.pdf",
+          "relativePath": "WORD IN CONTEXT/1.1.pdf",
+          "sizeBytes": 590406,
+          "sha256": "0ed1920c34d494fd71ab99e4b3abd5b2a90fa6087627677a6d9338ad6212fe2e",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/1.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/1.1.normalized.json"
+        },
+        {
+          "fileName": "1.2.pdf",
+          "relativePath": "WORD IN CONTEXT/1.2.pdf",
+          "sizeBytes": 617715,
+          "sha256": "8bd0a23e0ae77f36aaba07485c83a1b372055aab18f17ebe7f15140a45bb054a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/1.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/1.2.normalized.json"
+        },
+        {
+          "fileName": "1.3.pdf",
+          "relativePath": "WORD IN CONTEXT/1.3.pdf",
+          "sizeBytes": 605899,
+          "sha256": "89368590385c022caf8693af974e80e09e94a35e33a9404ea2abcde66bbb7a7f",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/1.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/1.3.normalized.json"
+        },
+        {
+          "fileName": "1.4.pdf",
+          "relativePath": "WORD IN CONTEXT/1.4.pdf",
+          "sizeBytes": 614473,
+          "sha256": "9639106526014cdaa191e81c636748758ca9f36787a37224303a29280f9ab285",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/1.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/1.4.normalized.json"
+        },
+        {
+          "fileName": "1.5.pdf",
+          "relativePath": "WORD IN CONTEXT/1.5.pdf",
+          "sizeBytes": 609847,
+          "sha256": "661d355f5a7a790855528c118cf6acb5d2b46991e726f8eb91ae3c7dc66d32bf",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/1.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/1.5.normalized.json"
+        },
+        {
+          "fileName": "11.1.pdf",
+          "relativePath": "WORD IN CONTEXT/11.1.pdf",
+          "sizeBytes": 646747,
+          "sha256": "714eecdb1ae863e0f8a4c9104abc2372d3d9917b4fcdd1c111d174999246b12f",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/11.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/11.1.normalized.json"
+        },
+        {
+          "fileName": "11.2.pdf",
+          "relativePath": "WORD IN CONTEXT/11.2.pdf",
+          "sizeBytes": 636788,
+          "sha256": "b8483e2f47204ab8f66861c97cd988bfd9ae9c4437f03397fb1bf8e17fd2ba12",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/11.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/11.2.normalized.json"
+        },
+        {
+          "fileName": "11.3.pdf",
+          "relativePath": "WORD IN CONTEXT/11.3.pdf",
+          "sizeBytes": 625181,
+          "sha256": "d1a9c30bd5233ab2d1e447ff155712ad531a2090ae95c144fcaa84d4c55d0d06",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/11.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/11.3.normalized.json"
+        },
+        {
+          "fileName": "11.4.pdf",
+          "relativePath": "WORD IN CONTEXT/11.4.pdf",
+          "sizeBytes": 629937,
+          "sha256": "5f69c7ccd5c4ac0630c098bf991d25909c8ada2d024e6711e131f1d8b43fff83",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/11.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/11.4.normalized.json"
+        },
+        {
+          "fileName": "11.5.pdf",
+          "relativePath": "WORD IN CONTEXT/11.5.pdf",
+          "sizeBytes": 637523,
+          "sha256": "6c5658221720aa74efbe8726ff931a49bde93a72f9436315a12f697a9874144e",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/11.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/11.5.normalized.json"
+        },
+        {
+          "fileName": "12.1.pdf",
+          "relativePath": "WORD IN CONTEXT/12.1.pdf",
+          "sizeBytes": 618345,
+          "sha256": "db8b2b301db1610096b39376ad7c960dd19df1ce6207293763c22b86018bdeca",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/12.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/12.1.normalized.json"
+        },
+        {
+          "fileName": "12.2.pdf",
+          "relativePath": "WORD IN CONTEXT/12.2.pdf",
+          "sizeBytes": 626176,
+          "sha256": "6b4d16a5a88f33514ab823a1725e34fc17ee54c0780790a73b3e102499e0bebd",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/12.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/12.2.normalized.json"
+        },
+        {
+          "fileName": "12.3.pdf",
+          "relativePath": "WORD IN CONTEXT/12.3.pdf",
+          "sizeBytes": 620706,
+          "sha256": "7b0f29a72db778cc04869201798c5edc7617320b8693ed6d6091c1dd16f7867c",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/12.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/12.3.normalized.json"
+        },
+        {
+          "fileName": "12.4.pdf",
+          "relativePath": "WORD IN CONTEXT/12.4.pdf",
+          "sizeBytes": 639371,
+          "sha256": "16c7ece383717eac9ef527541cc26d756440e48c430c74c913138657f47ddf8d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/12.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/12.4.normalized.json"
+        },
+        {
+          "fileName": "12.5.pdf",
+          "relativePath": "WORD IN CONTEXT/12.5.pdf",
+          "sizeBytes": 620252,
+          "sha256": "9d3d161d93df629652d1cd84300cf5251079fa54743a36b97bde10ca3188a2d3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/12.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/12.5.normalized.json"
+        },
+        {
+          "fileName": "13.1.pdf",
+          "relativePath": "WORD IN CONTEXT/13.1.pdf",
+          "sizeBytes": 635212,
+          "sha256": "913b58ebd3f5c8c846e5fa7a00d272769ac8c0827e48757b43a93028daa7ada7",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/13.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/13.1.normalized.json"
+        },
+        {
+          "fileName": "13.2.pdf",
+          "relativePath": "WORD IN CONTEXT/13.2.pdf",
+          "sizeBytes": 634259,
+          "sha256": "818ca280f56342bf0a38cfda6a4290235813175eed43f8c688246f685009ae46",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/13.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/13.2.normalized.json"
+        },
+        {
+          "fileName": "13.3.pdf",
+          "relativePath": "WORD IN CONTEXT/13.3.pdf",
+          "sizeBytes": 620947,
+          "sha256": "2f2d8932b4b59c4f3010dbceef0050d9a9fd5ef4777a863ed0fcde0f7664d627",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/13.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/13.3.normalized.json"
+        },
+        {
+          "fileName": "13.4.pdf",
+          "relativePath": "WORD IN CONTEXT/13.4.pdf",
+          "sizeBytes": 655150,
+          "sha256": "d8b2c8e0578fa13005ab23b4f5b83e29dfcf4388d7ab39f243dc08e194e8facd",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/13.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/13.4.normalized.json"
+        },
+        {
+          "fileName": "13.5.pdf",
+          "relativePath": "WORD IN CONTEXT/13.5.pdf",
+          "sizeBytes": 636876,
+          "sha256": "07d3d0a03194cb78d85655c73d5c5d37d207d21a041f97cdf2977823f50d0442",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/13.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/13.5.normalized.json"
+        },
+        {
+          "fileName": "14.1.pdf",
+          "relativePath": "WORD IN CONTEXT/14.1.pdf",
+          "sizeBytes": 623782,
+          "sha256": "c40cb81eb1a2791e0232d19dbe682b604a6a674b263cbf850aa0b7bfbe2384cb",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/14.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/14.1.normalized.json"
+        },
+        {
+          "fileName": "14.2.pdf",
+          "relativePath": "WORD IN CONTEXT/14.2.pdf",
+          "sizeBytes": 631906,
+          "sha256": "a7f2d9e66b50c748c53cb3dbd87085c8cfae6c8f25ccb69c3c60515a753d606a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/14.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/14.2.normalized.json"
+        },
+        {
+          "fileName": "14.3.pdf",
+          "relativePath": "WORD IN CONTEXT/14.3.pdf",
+          "sizeBytes": 633939,
+          "sha256": "0ae9f6803cef38785432cbfe26bcf78dad7102583a5951dbff81d6c72fd084d8",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/14.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/14.3.normalized.json"
+        },
+        {
+          "fileName": "14.4.pdf",
+          "relativePath": "WORD IN CONTEXT/14.4.pdf",
+          "sizeBytes": 616978,
+          "sha256": "45f63bf69ad80d629dfb99db7bd37fb8d64a9a27ca0113c6f4009ce7a2cb5954",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/14.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/14.4.normalized.json"
+        },
+        {
+          "fileName": "14.5.pdf",
+          "relativePath": "WORD IN CONTEXT/14.5.pdf",
+          "sizeBytes": 642279,
+          "sha256": "d969e84486ca81804752ca757c507fba6b4b606e272d9e5ac5a4b0e0f0a6e454",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/14.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/14.5.normalized.json"
+        },
+        {
+          "fileName": "15.1.pdf",
+          "relativePath": "WORD IN CONTEXT/15.1.pdf",
+          "sizeBytes": 624218,
+          "sha256": "d96485416cda630ccc4c2778d9123635ad28e8bedd9e73589a3685af5248493b",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/15.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/15.1.normalized.json"
+        },
+        {
+          "fileName": "15.2.pdf",
+          "relativePath": "WORD IN CONTEXT/15.2.pdf",
+          "sizeBytes": 623730,
+          "sha256": "6e35b5c298681985f0c880d223be1ab8387806625e19c151390d65a47864fcf1",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/15.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/15.2.normalized.json"
+        },
+        {
+          "fileName": "15.3.pdf",
+          "relativePath": "WORD IN CONTEXT/15.3.pdf",
+          "sizeBytes": 619755,
+          "sha256": "596bc63302cfadaf6aeadae86c88a991ba697f4bc2e5182de8008abc9bf34a67",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/15.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/15.3.normalized.json"
+        },
+        {
+          "fileName": "15.4.pdf",
+          "relativePath": "WORD IN CONTEXT/15.4.pdf",
+          "sizeBytes": 635512,
+          "sha256": "e3777b51fb666cc8045c998d595c1cb6d0d6267923270ff6210d973739da7ca4",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/15.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/15.4.normalized.json"
+        },
+        {
+          "fileName": "15.5.pdf",
+          "relativePath": "WORD IN CONTEXT/15.5.pdf",
+          "sizeBytes": 628602,
+          "sha256": "a08b09f7d9d55ab9f695b8e5e5fddefdcb59bde702b6c1563c72d100b6f72621",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/15.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/15.5.normalized.json"
+        },
+        {
+          "fileName": "16.1.pdf",
+          "relativePath": "WORD IN CONTEXT/16.1.pdf",
+          "sizeBytes": 627926,
+          "sha256": "237b2cfc55202a54993e8dea3b0610f570fdcbc1a720a9a8044ec954d1c07f6c",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/16.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/16.1.normalized.json"
+        },
+        {
+          "fileName": "16.2.pdf",
+          "relativePath": "WORD IN CONTEXT/16.2.pdf",
+          "sizeBytes": 625821,
+          "sha256": "a04a3d1ba86b82a557edd1e1c972a74306292006aafa0727477923d6326f1878",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/16.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/16.2.normalized.json"
+        },
+        {
+          "fileName": "16.3.pdf",
+          "relativePath": "WORD IN CONTEXT/16.3.pdf",
+          "sizeBytes": 631495,
+          "sha256": "e72f33ddfbdf4df0746a266ff6d1540d523274b4b4fa03c952e82f4cb21e6d1c",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/16.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/16.3.normalized.json"
+        },
+        {
+          "fileName": "16.4.pdf",
+          "relativePath": "WORD IN CONTEXT/16.4.pdf",
+          "sizeBytes": 637402,
+          "sha256": "2e3fc3dc61a293704bf449849603f5ba052cae936d472767b47696149b29096a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/16.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/16.4.normalized.json"
+        },
+        {
+          "fileName": "16.5.pdf",
+          "relativePath": "WORD IN CONTEXT/16.5.pdf",
+          "sizeBytes": 631559,
+          "sha256": "76502707b5c05052ab5aa1de30dd90f9b75b6a978bb13dab3d1a560d1aca9c55",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/16.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/16.5.normalized.json"
+        },
+        {
+          "fileName": "17.1.pdf",
+          "relativePath": "WORD IN CONTEXT/17.1.pdf",
+          "sizeBytes": 623322,
+          "sha256": "1e78d28503e0bea0ffc0c21ffeeff9a888f96e69f10d941ae4b414806042daf9",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/17.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/17.1.normalized.json"
+        },
+        {
+          "fileName": "17.2.pdf",
+          "relativePath": "WORD IN CONTEXT/17.2.pdf",
+          "sizeBytes": 628777,
+          "sha256": "b7fe8dab5faae510a9a15a796a185707465fd4582f0dffca7db1e06915781e3a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/17.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/17.2.normalized.json"
+        },
+        {
+          "fileName": "17.3.pdf",
+          "relativePath": "WORD IN CONTEXT/17.3.pdf",
+          "sizeBytes": 632698,
+          "sha256": "c31edc0045c24a3e7f16380e3ab69e41d2ad34f40af8d6b2803973d198c643d9",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/17.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/17.3.normalized.json"
+        },
+        {
+          "fileName": "17.4.pdf",
+          "relativePath": "WORD IN CONTEXT/17.4.pdf",
+          "sizeBytes": 633326,
+          "sha256": "083335af6a46e4e483c9859a317aa798178d5fbdfd7a2376b6a1106eaa9c5345",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/17.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/17.4.normalized.json"
+        },
+        {
+          "fileName": "17.5.pdf",
+          "relativePath": "WORD IN CONTEXT/17.5.pdf",
+          "sizeBytes": 635955,
+          "sha256": "019de2d0d7a97778e9138e88d8f6063a93be8f8b08f33116e6db768555b0bcb8",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/17.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/17.5.normalized.json"
+        },
+        {
+          "fileName": "2.1.pdf",
+          "relativePath": "WORD IN CONTEXT/2.1.pdf",
+          "sizeBytes": 638581,
+          "sha256": "f6466d5932a09c49ccddcd557fb8f02f91bb2be4267127ef2e95ff544aa65a98",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/2.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/2.1.normalized.json"
+        },
+        {
+          "fileName": "2.2.pdf",
+          "relativePath": "WORD IN CONTEXT/2.2.pdf",
+          "sizeBytes": 632936,
+          "sha256": "d614a69f03c5880808ca6c01be90632351fdfa45673d7d0e4aecf58cbf2653e9",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/2.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/2.2.normalized.json"
+        },
+        {
+          "fileName": "2.3.pdf",
+          "relativePath": "WORD IN CONTEXT/2.3.pdf",
+          "sizeBytes": 628956,
+          "sha256": "c9898f9e5dc55e518c932a9a23b722156a046e4efe1acb6630fdfa75531adcd2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/2.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/2.3.normalized.json"
+        },
+        {
+          "fileName": "2.4.pdf",
+          "relativePath": "WORD IN CONTEXT/2.4.pdf",
+          "sizeBytes": 645596,
+          "sha256": "f0eb81bb86a6097bb10f6191e974a8933018f183fa8e7be4435c909f3c07815a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/2.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/2.4.normalized.json"
+        },
+        {
+          "fileName": "2.5.pdf",
+          "relativePath": "WORD IN CONTEXT/2.5.pdf",
+          "sizeBytes": 631253,
+          "sha256": "f9363097129dade5dd7d4727bc3a7559ff1568c93b9f7b495a40d4b294dc8d45",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/2.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/2.5.normalized.json"
+        },
+        {
+          "fileName": "3.1.pdf",
+          "relativePath": "WORD IN CONTEXT/3.1.pdf",
+          "sizeBytes": 615806,
+          "sha256": "d1e4203bb968014d132d27c762965ce500f17d761c34f8f4b40248bf7dd8a5a0",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/3.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/3.1.normalized.json"
+        },
+        {
+          "fileName": "3.2.pdf",
+          "relativePath": "WORD IN CONTEXT/3.2.pdf",
+          "sizeBytes": 630716,
+          "sha256": "b041b8f83894f8e3839b21ea10758a4e67cf916592ea90bff6c1882c90ca7a81",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/3.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/3.2.normalized.json"
+        },
+        {
+          "fileName": "3.3.pdf",
+          "relativePath": "WORD IN CONTEXT/3.3.pdf",
+          "sizeBytes": 612013,
+          "sha256": "e6702772c3e8e0cf34599441f0d47b3523add093aef1fde62ad80bb4cdcfa263",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/3.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/3.3.normalized.json"
+        },
+        {
+          "fileName": "3.4.pdf",
+          "relativePath": "WORD IN CONTEXT/3.4.pdf",
+          "sizeBytes": 616977,
+          "sha256": "eb34c9ae1eac0373a06c7272248ef81cd90887042e03128082a1054d3e70be79",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/3.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/3.4.normalized.json"
+        },
+        {
+          "fileName": "3.5.pdf",
+          "relativePath": "WORD IN CONTEXT/3.5.pdf",
+          "sizeBytes": 636691,
+          "sha256": "9ea4e4dfad6433c5823cfbe83b59d5469db5ae0a9cc8f75b2a3fd4c5055d8480",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/3.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/3.5.normalized.json"
+        },
+        {
+          "fileName": "31.1.pdf",
+          "relativePath": "WORD IN CONTEXT/31.1.pdf",
+          "sizeBytes": 676989,
+          "sha256": "b8ee28f9916e1730f3c0e97cc754e806c3636764b4c17c4c9685c9df8da91514",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/31.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/31.1.normalized.json"
+        },
+        {
+          "fileName": "31.2.pdf",
+          "relativePath": "WORD IN CONTEXT/31.2.pdf",
+          "sizeBytes": 645976,
+          "sha256": "ee7b331ad343461fb49150b05809b64a1d83fce4245a61c4b6f034fb95c26e74",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/31.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/31.2.normalized.json"
+        },
+        {
+          "fileName": "31.3.pdf",
+          "relativePath": "WORD IN CONTEXT/31.3.pdf",
+          "sizeBytes": 659921,
+          "sha256": "cdeb57c6e59fd620ac9c7ae76d9574f5b7c0e4686fe2eb2eced2a2f8b8cdbbd7",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/31.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/31.3.normalized.json"
+        },
+        {
+          "fileName": "31.4.pdf",
+          "relativePath": "WORD IN CONTEXT/31.4.pdf",
+          "sizeBytes": 649696,
+          "sha256": "698cfc848d6b453c481b1e521afdf1461f0999cfbc83eb324d610fc990f22877",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/31.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/31.4.normalized.json"
+        },
+        {
+          "fileName": "31.5.pdf",
+          "relativePath": "WORD IN CONTEXT/31.5.pdf",
+          "sizeBytes": 554394,
+          "sha256": "470f74d753deafcd3629277b85f4e3d976ccad50d18f08e6a86a10e404100d94",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/31.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/31.5.normalized.json"
+        },
+        {
+          "fileName": "32.1.pdf",
+          "relativePath": "WORD IN CONTEXT/32.1.pdf",
+          "sizeBytes": 630453,
+          "sha256": "7f7bb5c42320b70a1518d3d78a78e4c960895ee8cd97cec18291dfa34eec3b19",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/32.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/32.1.normalized.json"
+        },
+        {
+          "fileName": "32.2.pdf",
+          "relativePath": "WORD IN CONTEXT/32.2.pdf",
+          "sizeBytes": 626617,
+          "sha256": "292e58da3e61e23c4b72b38fe7bbd684db8adae48aa9f0c53be424e1990fcfb7",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/32.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/32.2.normalized.json"
+        },
+        {
+          "fileName": "32.3.pdf",
+          "relativePath": "WORD IN CONTEXT/32.3.pdf",
+          "sizeBytes": 626219,
+          "sha256": "5c70f58c022479261592ea68ec1ca572bf78e937ae511291744f196a5fd00d25",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/32.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/32.3.normalized.json"
+        },
+        {
+          "fileName": "32.4.pdf",
+          "relativePath": "WORD IN CONTEXT/32.4.pdf",
+          "sizeBytes": 626439,
+          "sha256": "3287636ac2dbea88fe2b96f0714bbe34c42daa7438afdd6561162653e0f951d1",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/32.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/32.4.normalized.json"
+        },
+        {
+          "fileName": "32.5.pdf",
+          "relativePath": "WORD IN CONTEXT/32.5.pdf",
+          "sizeBytes": 632129,
+          "sha256": "c83003028af179000605cce8fdc228a9bbbbf3e15f8130a9eac2383967418a8f",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/32.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/32.5.normalized.json"
+        },
+        {
+          "fileName": "33.1.pdf",
+          "relativePath": "WORD IN CONTEXT/33.1.pdf",
+          "sizeBytes": 625542,
+          "sha256": "82a28c6b036710306474f4aa7b6efe9e1163297fd1682b151a51561364c524d5",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/33.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/33.1.normalized.json"
+        },
+        {
+          "fileName": "33.2.pdf",
+          "relativePath": "WORD IN CONTEXT/33.2.pdf",
+          "sizeBytes": 636639,
+          "sha256": "f24ba682f1df192490d8ecf1317969c5ac89f1698f3dd8b27671554d95dab845",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/33.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/33.2.normalized.json"
+        },
+        {
+          "fileName": "33.3.pdf",
+          "relativePath": "WORD IN CONTEXT/33.3.pdf",
+          "sizeBytes": 629790,
+          "sha256": "428994c6e2adc31f71ed758b744c4d7b3cd0c5eb9107f855fd9aa24a4e50c614",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/33.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/33.3.normalized.json"
+        },
+        {
+          "fileName": "33.4.pdf",
+          "relativePath": "WORD IN CONTEXT/33.4.pdf",
+          "sizeBytes": 626756,
+          "sha256": "c9ced5338a311d575b7706d4e6c8a8ab877fdec195c6fda887c654f32b250321",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/33.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/33.4.normalized.json"
+        },
+        {
+          "fileName": "33.5.pdf",
+          "relativePath": "WORD IN CONTEXT/33.5.pdf",
+          "sizeBytes": 622192,
+          "sha256": "9a46ba3edbd9eddd69be6d7014afc9b2fb2e6b17c83216bc1213fcf8242777a3",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/33.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/33.5.normalized.json"
+        },
+        {
+          "fileName": "4.1.pdf",
+          "relativePath": "WORD IN CONTEXT/4.1.pdf",
+          "sizeBytes": 626580,
+          "sha256": "718e6ce47dd08086cf5e930775cc5988beeebaadfded8571c8cfd5d997afd396",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/4.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/4.1.normalized.json"
+        },
+        {
+          "fileName": "4.2.pdf",
+          "relativePath": "WORD IN CONTEXT/4.2.pdf",
+          "sizeBytes": 628576,
+          "sha256": "8ca87c38675ff32d95a713861d827f5cf161c86914de19a419b7a916180d1e31",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/4.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/4.2.normalized.json"
+        },
+        {
+          "fileName": "4.3.pdf",
+          "relativePath": "WORD IN CONTEXT/4.3.pdf",
+          "sizeBytes": 633875,
+          "sha256": "4bfcffe6ec9db9ebfadc407f893ece4376b1cd208e4a8e17fa1721e5e3b7d779",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/4.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/4.3.normalized.json"
+        },
+        {
+          "fileName": "4.4.pdf",
+          "relativePath": "WORD IN CONTEXT/4.4.pdf",
+          "sizeBytes": 639763,
+          "sha256": "23221b4d48a7f7474f7a9b4e2b33ed05e4a960fa30fc78036e0eedc06ac261fd",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/4.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/4.4.normalized.json"
+        },
+        {
+          "fileName": "4.5.pdf",
+          "relativePath": "WORD IN CONTEXT/4.5.pdf",
+          "sizeBytes": 718525,
+          "sha256": "8a9d5f14321057545cde871f7b38d5c19e5d0d78dcca642dfc2475547f11b0a6",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/4.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/4.5.normalized.json"
+        },
+        {
+          "fileName": "5.1.pdf",
+          "relativePath": "WORD IN CONTEXT/5.1.pdf",
+          "sizeBytes": 651978,
+          "sha256": "ed9e3a97a9261ca0d932caf42a1f780041ef159e43261496f56af61a1ebef876",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/5.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/5.1.normalized.json"
+        },
+        {
+          "fileName": "5.2.pdf",
+          "relativePath": "WORD IN CONTEXT/5.2.pdf",
+          "sizeBytes": 646536,
+          "sha256": "e4ff46a4d18e7599481a70cb24a557ec3fece699e1da9e430dfc12a4c21b6bce",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/5.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/5.2.normalized.json"
+        },
+        {
+          "fileName": "5.3.pdf",
+          "relativePath": "WORD IN CONTEXT/5.3.pdf",
+          "sizeBytes": 639874,
+          "sha256": "99249df91732522cbcaf4fd5b78c20a2bf91c383dd6102f6b50327a95c3d6fda",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/5.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/5.3.normalized.json"
+        },
+        {
+          "fileName": "5.4.pdf",
+          "relativePath": "WORD IN CONTEXT/5.4.pdf",
+          "sizeBytes": 644355,
+          "sha256": "235e32bb7201a0fd1aebbd335201808e4a70dd82f743e51925c9f6c69dec9c28",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/5.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/5.4.normalized.json"
+        },
+        {
+          "fileName": "5.5.pdf",
+          "relativePath": "WORD IN CONTEXT/5.5.pdf",
+          "sizeBytes": 648013,
+          "sha256": "aaba04b94ff3cce227cef9fcf92482662d43a1248873d4d7f345961275722ea2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/5.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/5.5.normalized.json"
+        },
+        {
+          "fileName": "6.1.pdf",
+          "relativePath": "WORD IN CONTEXT/6.1.pdf",
+          "sizeBytes": 602982,
+          "sha256": "43324d38d0e3998fb328dc92f9544c5b39e1dda2ee2e380ca48a4b5b5e47f8cf",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/6.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/6.1.normalized.json"
+        },
+        {
+          "fileName": "6.2.pdf",
+          "relativePath": "WORD IN CONTEXT/6.2.pdf",
+          "sizeBytes": 602789,
+          "sha256": "cde0ea0a529d3eb5f9b508ab3cef87228586c74a5b7066efdb6ea9b4169a12bd",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/6.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/6.2.normalized.json"
+        },
+        {
+          "fileName": "6.3.pdf",
+          "relativePath": "WORD IN CONTEXT/6.3.pdf",
+          "sizeBytes": 610530,
+          "sha256": "c216694501a4c5991f7cde74f5f98933ed2e54fbf645d77035d77d8f60d69686",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/6.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/6.3.normalized.json"
+        },
+        {
+          "fileName": "6.4.pdf",
+          "relativePath": "WORD IN CONTEXT/6.4.pdf",
+          "sizeBytes": 601581,
+          "sha256": "ab91bc374f46e2402a4c994dbab706859cdb1016777201cf196fabb467134f54",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/6.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/6.4.normalized.json"
+        },
+        {
+          "fileName": "6.5.pdf",
+          "relativePath": "WORD IN CONTEXT/6.5.pdf",
+          "sizeBytes": 603685,
+          "sha256": "1a592f2479689fa19356acd0224fe0f56a52fde4469940ea31e88b94825e9d8c",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/6.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/6.5.normalized.json"
+        },
+        {
+          "fileName": "7.1.pdf",
+          "relativePath": "WORD IN CONTEXT/7.1.pdf",
+          "sizeBytes": 603459,
+          "sha256": "e1094b833d8e21ce86ac4220bc2d0b3c8a556a1bea56183570517ba9c943a47d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/7.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/7.1.normalized.json"
+        },
+        {
+          "fileName": "7.2.pdf",
+          "relativePath": "WORD IN CONTEXT/7.2.pdf",
+          "sizeBytes": 614166,
+          "sha256": "fd93af8e1185e16936da175e3c74609c7c8b0d81320122f9e31e7881d4dbb727",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/7.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/7.2.normalized.json"
+        },
+        {
+          "fileName": "7.3.pdf",
+          "relativePath": "WORD IN CONTEXT/7.3.pdf",
+          "sizeBytes": 607345,
+          "sha256": "1aa98892a1e489fa6e7988fc89180c161d9884b6e318d8d41ea6f583046fb2f9",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/7.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/7.3.normalized.json"
+        },
+        {
+          "fileName": "7.4.pdf",
+          "relativePath": "WORD IN CONTEXT/7.4.pdf",
+          "sizeBytes": 605205,
+          "sha256": "8ed8cb1f89374886f91d6869ba3a21d0758c90c40a61d10145791f086b8f9a14",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/7.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/7.4.normalized.json"
+        },
+        {
+          "fileName": "7.5.pdf",
+          "relativePath": "WORD IN CONTEXT/7.5.pdf",
+          "sizeBytes": 606468,
+          "sha256": "f08e7ece5c067cde1ace48649a4ab257a73c29c929fd5b561c91c653f384de4f",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/7.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/7.5.normalized.json"
+        },
+        {
+          "fileName": "8.1.pdf",
+          "relativePath": "WORD IN CONTEXT/8.1.pdf",
+          "sizeBytes": 604227,
+          "sha256": "0f8a869363bc7be584256c99792040f80d9e5b9f458bd788345e289b46467eec",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/8.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/8.1.normalized.json"
+        },
+        {
+          "fileName": "8.2.pdf",
+          "relativePath": "WORD IN CONTEXT/8.2.pdf",
+          "sizeBytes": 612733,
+          "sha256": "0b005565c7ef53b9dfb7b25002f7e25669affbd18cfff983c221cad05ffb8eef",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/8.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/8.2.normalized.json"
+        },
+        {
+          "fileName": "8.3.pdf",
+          "relativePath": "WORD IN CONTEXT/8.3.pdf",
+          "sizeBytes": 606777,
+          "sha256": "fe1e15dc6b7ed83795b0be8c9b05c07cfd5a42e6bfe3ebab6265f55c8f84625d",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/8.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/8.3.normalized.json"
+        },
+        {
+          "fileName": "8.4.pdf",
+          "relativePath": "WORD IN CONTEXT/8.4.pdf",
+          "sizeBytes": 606923,
+          "sha256": "e0c50641b7f1489a2ab95983c0c5acbd610654daafccdb0470d39dae989c5d67",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/8.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/8.4.normalized.json"
+        },
+        {
+          "fileName": "8.5.pdf",
+          "relativePath": "WORD IN CONTEXT/8.5.pdf",
+          "sizeBytes": 617448,
+          "sha256": "2e3f1ad80637af49671aa7976d408a8399df1a69f2c24f0a0e5611b66b3f4416",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/word-in-context/8.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/word-in-context/8.5.normalized.json"
+        }
+      ]
+    },
+    {
+      "folderId": "writing",
+      "folderName": "WRITING",
+      "relativePath": "WRITING",
+      "suggestedSkill": "Writing",
+      "files": [
+        {
+          "fileName": "37.1.pdf",
+          "relativePath": "WRITING/37.1.pdf",
+          "sizeBytes": 515923,
+          "sha256": "d3fb3b94edbb50b012a24854d87ba480a8c9a6dd6d006e4a8b4342b6730ea57a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/37.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/37.1.normalized.json"
+        },
+        {
+          "fileName": "37.2.pdf",
+          "relativePath": "WRITING/37.2.pdf",
+          "sizeBytes": 516923,
+          "sha256": "97d24b58a3097d5105a9fc55b41529a0aee3236d135eb90fd924c1fba3d67704",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/37.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/37.2.normalized.json"
+        },
+        {
+          "fileName": "37.3.pdf",
+          "relativePath": "WRITING/37.3.pdf",
+          "sizeBytes": 515623,
+          "sha256": "a5f1375fd8f75a5b7bf4df7f726eec7fe6275238bdce443082e1f1320f21ca26",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/37.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/37.3.normalized.json"
+        },
+        {
+          "fileName": "37.4.pdf",
+          "relativePath": "WRITING/37.4.pdf",
+          "sizeBytes": 512911,
+          "sha256": "4b276ecad20f16a862331a4dcb4d1b8ff05ce32b59aaf74a3bf67e39bd72a4bc",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/37.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/37.4.normalized.json"
+        },
+        {
+          "fileName": "37.5.pdf",
+          "relativePath": "WRITING/37.5.pdf",
+          "sizeBytes": 512458,
+          "sha256": "4ab6b14ccc9a46f805dd084f7849525cb19edd1fac4d1533febef12b0e6302a8",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/37.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/37.5.normalized.json"
+        },
+        {
+          "fileName": "38.1.pdf",
+          "relativePath": "WRITING/38.1.pdf",
+          "sizeBytes": 522790,
+          "sha256": "1b10eef847cae3f528c42d0eaf72226fcde97296d9d34bc88584600de38256c1",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.1.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.1.normalized.json"
+        },
+        {
+          "fileName": "38.2.pdf",
+          "relativePath": "WRITING/38.2.pdf",
+          "sizeBytes": 523566,
+          "sha256": "8820af16f9b2ba37b416206f2d9144d3cf938c113bc047b16b41de3c433256c7",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.2.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.2.normalized.json"
+        },
+        {
+          "fileName": "38.3.pdf",
+          "relativePath": "WRITING/38.3.pdf",
+          "sizeBytes": 521675,
+          "sha256": "1ae86698a8cdeb27c69f5614d9e27c63a97cc010ddddb89d5d0b34d4713f6cc2",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.3.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.3.normalized.json"
+        },
+        {
+          "fileName": "38.4.pdf",
+          "relativePath": "WRITING/38.4.pdf",
+          "sizeBytes": 518740,
+          "sha256": "40bf17a2a301ce98811c89b64feefb60344c62af84c7d2c923b6b237aceb24bf",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.4.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.4.normalized.json"
+        },
+        {
+          "fileName": "38.5.pdf",
+          "relativePath": "WRITING/38.5.pdf",
+          "sizeBytes": 523495,
+          "sha256": "91d1b186ebd49714c3e9ec61bc74d7d37f05b927ab2a479e003f4adc259b5c1a",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.5.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.5.normalized.json"
+        },
+        {
+          "fileName": "38.6.pdf",
+          "relativePath": "WRITING/38.6.pdf",
+          "sizeBytes": 518607,
+          "sha256": "2d2958d9a6ccd5bb7651ec808f77ece998ff50e1ce3aa115e1599d8667bd5eed",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.6.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.6.normalized.json"
+        },
+        {
+          "fileName": "38.7.pdf",
+          "relativePath": "WRITING/38.7.pdf",
+          "sizeBytes": 526831,
+          "sha256": "5b9d99234c8b3598b3cde5241a7f79508b4708df10e2ca493c5fa8b7a8af2262",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.7.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.7.normalized.json"
+        },
+        {
+          "fileName": "38.8.pdf",
+          "relativePath": "WRITING/38.8.pdf",
+          "sizeBytes": 535887,
+          "sha256": "faaa36ceb3f5a5ee75c0a231bcc055000ea82c93a043364354d1c39fddaed3d7",
+          "status": "approved",
+          "extractedJsonPath": "data/extracted/writing/38.8.extracted.json",
+          "normalizedJsonPath": "data/normalized/writing/38.8.normalized.json"
+        }
+      ]
+    }
+  ]
+}

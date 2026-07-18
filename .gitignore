@@ -1,0 +1,41 @@
+# Dependency directories
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Local/extracted data (keep db.json and manifest for config/demo, ignore uploads/extractions)
+data/uploads/
+data/extracted/
+data/normalized/
+data/annotations/
+
+# Temporary and log files
+*.log
+check_results.txt
+scratch/
+
+# Raw SAT PDF directories (user-provided private documents)
+COE TEXTUAL/
+CROSS TEXT/
+INFERENCE/
+LITERARY/
+MAIN IDEA/
+WORD IN CONTEXT/
+WRITING/
+
+# Build artifacts
+web/dist/
+web/dist-ssr/
+web/dist-electron/
+
+# OS/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
