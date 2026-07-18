@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { 
   Play, Edit3, Folder, FileText, ChevronRight, ChevronDown, Check, AlertTriangle, CheckSquare,
-  UploadCloud, FileUp, FolderPlus, Trash2
+  UploadCloud, FileUp, FolderPlus, Trash2, Plus
 } from 'lucide-react';
 import type { Question } from '../store/practiceStore';
 
@@ -168,6 +168,33 @@ export const ImportDashboard: React.FC = () => {
     } catch (err) {
       console.error(err);
       setActionMessage('Lỗi kết nối khi xóa tệp.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const [newFolderName, setNewFolderName] = useState<string>('');
+
+  const handleCreateFolder = async () => {
+    if (!newFolderName.trim()) return;
+    try {
+      setLoading(true);
+      const res = await fetch('http://localhost:5000/api/folders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ folderName: newFolderName.trim() })
+      });
+      if (res.ok) {
+        setNewFolderName('');
+        setActionMessage('Đã tạo thư mục mới thành công!');
+        await fetchManifest();
+      } else {
+        const err = await res.json();
+        setActionMessage(`Lỗi: ${err.error}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setActionMessage('Lỗi kết nối khi tạo thư mục.');
     } finally {
       setLoading(false);
     }
@@ -718,6 +745,26 @@ export const ImportDashboard: React.FC = () => {
           <strong style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
             <Folder size={16} /> Thư mục tài liệu SAT
           </strong>
+
+          {/* New folder creation inline widget */}
+          <div style={{ display: 'flex', gap: '6px', marginBottom: '1rem' }}>
+            <input 
+              type="text" 
+              className="input" 
+              style={{ fontSize: '0.75rem', height: '28px', padding: '0 6px', flex: 1 }}
+              placeholder="Tên thư mục mới..."
+              value={newFolderName}
+              onChange={e => setNewFolderName(e.target.value)}
+            />
+            <button 
+              className="btn btn-primary" 
+              style={{ fontSize: '0.75rem', height: '28px', padding: '0 10px', display: 'flex', alignItems: 'center', gap: '2px', flexShrink: 0, backgroundColor: '#10b981', borderColor: '#10b981' }}
+              onClick={handleCreateFolder}
+            >
+              <Plus size={10} />
+              Tạo
+            </button>
+          </div>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             {manifest?.folders.map(folder => {

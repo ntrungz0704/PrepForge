@@ -465,8 +465,7 @@ app.delete('/api/files', (req, res) => {
       for (const folder of manifest.folders) {
         folder.files = folder.files.filter(f => f.relativePath !== relativePath && f.relativePath !== `data/uploads/${relativePath}`);
       }
-      // Filter out empty folders
-      manifest.folders = manifest.folders.filter(folder => folder.files.length > 0);
+      // Do NOT filter out empty folders to keep folder structures intact
       
       // Recalculate summary
       const allFiles = manifest.folders.flatMap(f => f.files);
@@ -478,6 +477,47 @@ app.delete('/api/files', (req, res) => {
     }
 
     res.json({ success: true, message: 'File and associated data deleted successfully.' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// POST /api/folders - Create an empty folder in import-manifest.json
+app.post('/api/folders', (req, res) => {
+  const { folderName } = req.body;
+  if (!folderName) {
+    return res.status(400).json({ error: 'Missing folderName.' });
+  }
+  try {
+    let manifest = { folders: [] };
+    if (fs.existsSync(manifestPath)) {
+      manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+    }
+
+    const folderId = folderName.toLowerCase().replace(/\s+/g, '-');
+    const suggestedSkill = folderName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+    let folder = manifest.folders.find(f => f.folderId === folderId);
+    if (!folder) {
+      folder = {
+        folderId,
+        folderName,
+        relativePath: `data/uploads/${folderName}`,
+        suggestedSkill,
+        files: []
+      };
+      manifest.folders.push(folder);
+
+      // Create the physical folder on disk
+      const absoluteFolderPath = path.join(rootDir, 'data', 'uploads', folderName);
+      if (!fs.existsSync(absoluteFolderPath)) {
+        fs.mkdirSync(absoluteFolderPath, { recursive: true });
+      }
+
+      fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8');
+    }
+
+    res.json({ success: true, folder });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
