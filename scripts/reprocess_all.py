@@ -106,7 +106,9 @@ def main():
                 "sourceFileId": f"file-{sha256}",
                 "approvedAt": file_info.get("approvedAt") or "2026-07-17T19:01:27.155Z",
                 "title": parsed.get("title"),
-                "breadcrumb": parsed.get("breadcrumb")
+                "breadcrumb": parsed.get("breadcrumb"),
+                "confidence": parsed.get("confidence", 0.0),
+                "parserName": parsed.get("parser_name", "manual_review_skeleton")
             }
             
             # Remove old question with this ID if it exists
@@ -141,7 +143,9 @@ def main():
                         "explanation": parsed.get("explanation"),
                         "reviewStatus": "approved" if old_status == "approved" else "pending_review",
                         "title": parsed.get("title"),
-                        "breadcrumb": parsed.get("breadcrumb")
+                        "breadcrumb": parsed.get("breadcrumb"),
+                        "confidence": parsed.get("confidence", 0.0),
+                        "parserName": parsed.get("parser_name", "manual_review_skeleton")
                     }
                 ],
                 "normalizationMethod": method,

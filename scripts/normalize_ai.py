@@ -35,6 +35,26 @@ def clean_vietaccepted_text(raw_text):
         return raw_text.split("Lưu\n")[-1].strip()
     return raw_text.strip()
 
+def clean_common_watermarks(raw_text):
+    """SYSTEMATIC CLEANING: Removes headers, footers, navigation junk, and watermarks."""
+    # Slice off top web headers if "Lưu\n" is present
+    if "Lưu\n" in raw_text:
+        text = raw_text.split("Lưu\n")[-1].strip()
+    else:
+        text = raw_text.strip()
+        
+    # Strip known watermarks/garbage
+    text = re.sub(r"\[vietacceptedsat\]", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"Mã đề:\s*\S+", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"satsuite\.vietaccepted\.edu\.vn\S*", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"Trang chủ\s*\|\s*Khóa ôn đề.*?\n", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"CHỨC NĂNG CHÍNH.*?\n", "", text, flags=re.IGNORECASE)
+    
+    # Remove division line characters
+    text = re.sub(r"[-—_=\s]{6,}", "\n", text)
+    
+    return text.strip()
+
 def parse_sat_metadata(raw_text):
     title = None
     breadcrumb = None
@@ -73,6 +93,37 @@ def parse_sat_metadata(raw_text):
         
     return title, breadcrumb
 
+class ParserRegistry:
+    """Chain of Responsibility pattern to run multiple parser strategies with confidence scoring."""
+    def __init__(self):
+        self.parsers = []
+
+    def register(self, name, parser_func):
+        self.parsers.append((name, parser_func))
+
+    def parse(self, raw_text, folder_skill):
+        best_result = None
+        best_confidence = -1
+        best_parser_name = None
+
+        for name, parser_func in self.parsers:
+            try:
+                res = parser_func(raw_text, folder_skill)
+                if res and isinstance(res, dict):
+                    confidence = res.get("confidence", 0)
+                    if confidence > best_confidence:
+                        best_confidence = confidence
+                        best_result = res
+                        best_parser_name = name
+            except Exception as e:
+                print(f"[Parser Registry] Error running {name}: {e}", file=sys.stderr)
+
+        if best_result and best_confidence >= 50:
+            best_result["confidence"] = best_confidence / 100.0  # Normalize to 0.0 - 1.0 for system compatibility
+            best_result["parser_name"] = best_parser_name
+            return best_result
+        return None
+
 def try_vietaccepted_detail_parser(raw_text, folder_skill):
     """Deterministic parser for PDFs with [vietacceptedsat] markers."""
     try:
@@ -87,18 +138,14 @@ def try_vietaccepted_detail_parser(raw_text, folder_skill):
         # 1. Extract Passage
         passage = part_before
         if "Lưu\n" in raw_text and not "Lưu\n" in cleaned_text:
-            # We already split and took the last part
             pass
         else:
             passage_match = re.search(r"Lưu\n(.*?)$", part_before, re.DOTALL)
             if passage_match:
                 passage = passage_match.group(1).strip()
 
-        # Clean watermark/codes from passage
-        passage = re.sub(r"\[vietacceptedsat\]", "", passage)
-        passage = re.sub(r"Mã đề:\s*\S+", "", passage)
-        passage = re.sub(r"\b\d{4}\b", "", passage) # remove years like 2018
-        passage = passage.strip()
+        # Clean watermarks/metadata from passage
+        passage = clean_common_watermarks(passage)
             
         # 2. Extract Choices A, B, C, D (only from part_after)
         choices = []
@@ -159,7 +206,7 @@ def try_vietaccepted_detail_parser(raw_text, folder_skill):
                         question_stem = "Which choice completes the text with the most logical and precise word or phrase?"
 
         # Clean stem from division lines
-        question_stem = re.sub(r"[-—\s]{5,}", "", question_stem).strip()
+        question_stem = clean_common_watermarks(question_stem)
 
         # 5. Extract Explanation (from part_before)
         explanation = {
@@ -214,7 +261,7 @@ def try_vietaccepted_detail_parser(raw_text, folder_skill):
             "correctAnswer": correct_answer or "",
             "explanation": explanation,
             "skill": folder_skill,
-            "confidence": 1.0,
+            "confidence": 100 if correct_answer else 70,
             "title": title,
             "breadcrumb": breadcrumb
         }
@@ -224,7 +271,7 @@ def try_vietaccepted_detail_parser(raw_text, folder_skill):
 def try_generic_multiple_choice_parser(raw_text, folder_skill):
     """Fallback parser for multiple choice questions without a specific signature."""
     try:
-        cleaned_text = clean_vietaccepted_text(raw_text)
+        cleaned_text = clean_common_watermarks(raw_text)
         lines = cleaned_text.split('\n')
         
         choice_patterns = [
@@ -279,10 +326,8 @@ def try_generic_multiple_choice_parser(raw_text, folder_skill):
 
         # Clean passage and stem watermarks/division lines
         if passage:
-            passage = re.sub(r"\[vietacceptedsat\]", "", passage)
-            passage = re.sub(r"Mã đề:\s*\S+", "", passage)
-            passage = re.sub(r"[-—\s]{5,}", "", passage).strip()
-        question_stem = re.sub(r"[-—\s]{5,}", "", question_stem).strip()
+            passage = clean_common_watermarks(passage)
+        question_stem = clean_common_watermarks(question_stem)
         
         correct_answer = None
         ans_patterns = [
@@ -325,19 +370,185 @@ def try_generic_multiple_choice_parser(raw_text, folder_skill):
             "correctAnswer": correct_answer or "",
             "explanation": explanation,
             "skill": folder_skill,
-            "confidence": 0.8,
+            "confidence": 85 if correct_answer else 65,
             "title": title,
             "breadcrumb": breadcrumb
         }
     except Exception:
         return None
 
+def try_abcd_parentheses_parser(raw_text, folder_skill):
+    """Parser for parenthesized choices like (A) option1 (B) option2."""
+    try:
+        cleaned_text = clean_common_watermarks(raw_text)
+        lines = cleaned_text.split('\n')
+        
+        choices = []
+        choices_start_idx = -1
+        
+        # 1. Inline single line options: (A) xxx (B) yyy (C) zzz (D) www
+        inline_pat = r'(?:\s|^)\(A\)\s*(.*?)\s*\(B\)\s*(.*?)\s*\(C\)\s*(.*?)\s*\(D\)\s*(.*)$'
+        for idx, line in enumerate(lines):
+            match = re.search(inline_pat, line, re.IGNORECASE)
+            if match:
+                choices = [
+                    {"label": "A", "text": match.group(1).strip()},
+                    {"label": "B", "text": match.group(2).strip()},
+                    {"label": "C", "text": match.group(3).strip()},
+                    {"label": "D", "text": match.group(4).strip()}
+                ]
+                choices_start_idx = idx
+                break
+                
+        # 2. Newline-separated options: (A) xxx \n (B) yyy
+        if len(choices) < 4:
+            pat_a, pat_b, pat_c, pat_d = (
+                r'^\s*\(A\)\s*(.*)$',
+                r'^\s*\(B\)\s*(.*)$',
+                r'^\s*\(C\)\s*(.*)$',
+                r'^\s*\(D\)\s*(.*)$'
+            )
+            a_match = b_match = c_match = d_match = None
+            for idx, line in enumerate(lines):
+                if re.match(pat_a, line, re.IGNORECASE):
+                    a_match = (idx, re.match(pat_a, line, re.IGNORECASE).group(1).strip())
+                elif re.match(pat_b, line, re.IGNORECASE):
+                    b_match = (idx, re.match(pat_b, line, re.IGNORECASE).group(1).strip())
+                elif re.match(pat_c, line, re.IGNORECASE):
+                    c_match = (idx, re.match(pat_c, line, re.IGNORECASE).group(1).strip())
+                elif re.match(pat_d, line, re.IGNORECASE):
+                    d_match = (idx, re.match(pat_d, line, re.IGNORECASE).group(1).strip())
+            
+            if a_match and b_match and c_match and d_match:
+                if a_match[0] < b_match[0] and b_match[0] < c_match[0] and c_match[0] < d_match[0]:
+                    choices = [
+                        {"label": "A", "text": a_match[1]},
+                        {"label": "B", "text": b_match[1]},
+                        {"label": "C", "text": c_match[1]},
+                        {"label": "D", "text": d_match[1]}
+                    ]
+                    choices_start_idx = a_match[0]
+        
+        if len(choices) < 4:
+            return None
+            
+        before_choices_text = "\n".join(lines[:choices_start_idx]).strip()
+        
+        stem_match = re.search(r"((?:Which choice|Which sentence|Which option|Based on|According to|In the text|What is|Describe).*?\?)$", before_choices_text, re.DOTALL | re.IGNORECASE)
+        if stem_match:
+            question_stem = stem_match.group(1).strip()
+            passage = before_choices_text[:stem_match.start()].strip()
+        else:
+            split_lines = [l.strip() for l in before_choices_text.split('\n') if l.strip()]
+            if len(split_lines) > 1:
+                question_stem = split_lines[-1]
+                passage = "\n".join(split_lines[:-1])
+            else:
+                question_stem = before_choices_text
+                passage = None
+        
+        if passage:
+            passage = clean_common_watermarks(passage)
+        question_stem = clean_common_watermarks(question_stem)
+        
+        correct_answer = None
+        ans_patterns = [
+            r"(?:Correct\s+)?Answer:\s*([A-D])",
+            r"Key:\s*([A-D])",
+            r"Đáp án:\s*([A-D])",
+            r"\(([A-D])\)\s+is\s+correct"
+        ]
+        for pat in ans_patterns:
+            ans_match = re.search(pat, raw_text, re.IGNORECASE)
+            if ans_match:
+                correct_answer = ans_match.group(1).upper()
+                break
+                
+        title, breadcrumb = parse_sat_metadata(raw_text)
+        return {
+            "passage": passage,
+            "questionStem": question_stem,
+            "choices": choices,
+            "correctAnswer": correct_answer or "",
+            "explanation": {
+                "correctReason": "No explanation found.",
+                "choiceReasons": {"A": "No explanation found.", "B": "No explanation found.", "C": "No explanation found.", "D": "No explanation found."}
+            },
+            "skill": folder_skill,
+            "confidence": 85 if correct_answer else 65,
+            "title": title,
+            "breadcrumb": breadcrumb
+        }
+    except Exception:
+        return None
+
+def try_answer_key_at_bottom_parser(raw_text, folder_skill):
+    """Looks for explicit Answer Key listings at the bottom of the page."""
+    try:
+        lines = raw_text.strip().split('\n')
+        bottom_section = "\n".join(lines[-10:])
+        
+        match = re.search(r"\b(?:Answer|Key|Đáp án|Correct)\s*[:=-]?\s*\b([A-D])\b", bottom_section, re.IGNORECASE)
+        if match:
+            res = try_generic_multiple_choice_parser(raw_text, folder_skill)
+            if res and not res.get("correctAnswer"):
+                res["correctAnswer"] = match.group(1).upper()
+                res["confidence"] = 80
+                return res
+        return None
+    except Exception:
+        return None
+
+def try_generic_two_column_parser(raw_text, folder_skill):
+    """Detects tabular or side-by-side choices and aligns them."""
+    try:
+        cleaned_text = clean_common_watermarks(raw_text)
+        lines = cleaned_text.split('\n')
+        
+        col_lines = []
+        for line in lines:
+            parts = re.split(r'\s{3,}', line.strip())
+            if len(parts) >= 2:
+                col_lines.append(parts)
+                
+        if len(col_lines) < 4:
+            return None
+            
+        choices = []
+        for row in col_lines:
+            for part in row:
+                match = re.match(r'^\s*([A-D])\.\s*(.*)$', part, re.IGNORECASE)
+                if match:
+                    choices.append({"label": match.group(1).upper(), "text": match.group(2).strip()})
+                    
+        unique_choices = []
+        seen_labels = set()
+        for c in choices:
+            if c["label"] not in seen_labels:
+                seen_labels.add(c["label"])
+                unique_choices.append(c)
+                
+        if len(unique_choices) == 4:
+            res = try_generic_multiple_choice_parser(raw_text, folder_skill)
+            if res:
+                res["choices"] = sorted(unique_choices, key=lambda x: x["label"])
+                res["confidence"] = 75
+                return res
+        return None
+    except Exception:
+        return None
+
+# Register all local parsers
+registry = ParserRegistry()
+registry.register("vietaccepted_detail", try_vietaccepted_detail_parser)
+registry.register("abcd_parentheses", try_abcd_parentheses_parser)
+registry.register("answer_key_at_bottom", try_answer_key_at_bottom_parser)
+registry.register("generic_two_column", try_generic_two_column_parser)
+registry.register("generic_mcq", try_generic_multiple_choice_parser)
+
 def local_parse(raw_text, folder_skill):
-    """Try various local layout parsing strategies in priority order."""
-    res = try_vietaccepted_detail_parser(raw_text, folder_skill)
-    if res:
-        return res
-    return try_generic_multiple_choice_parser(raw_text, folder_skill)
+    """Runs all registered parsers and returns the highest confidence result."""
+    return registry.parse(raw_text, folder_skill)
 
 def call_gemini_api(model, raw_text, folder_skill):
     """Call Gemini to normalize the raw text into structured JSON with automatic rate limit retries."""
@@ -494,8 +705,33 @@ def main():
             else:
                 method_used = "failed"
                 
-        # If still no normalized data, generate a skeleton question for manual review
+        # If still no normalized data, generate a skeleton question for manual review and log failure
         if not normalized_data:
+            # Failure logging
+            try:
+                logs_dir = os.path.join(root_dir, "data", "logs")
+                os.makedirs(logs_dir, exist_ok=True)
+                failures_path = os.path.join(logs_dir, "parser_failures.json")
+                
+                failure_entry = {
+                    "fileName": filename,
+                    "folderId": folder_id,
+                    "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "rawTextPreview": raw_text[:800]
+                }
+                
+                failures = []
+                if os.path.exists(failures_path):
+                    with open(failures_path, "r", encoding="utf-8") as lf:
+                        failures = json.load(lf)
+                
+                failures.append(failure_entry)
+                failures = failures[-100:]  # Limit to last 100 entries
+                with open(failures_path, "w", encoding="utf-8") as lf:
+                    json.dump(failures, lf, indent=2, ensure_ascii=False)
+            except Exception as le:
+                print(f"[Logging Error] Failed to write parser failure log: {le}", file=sys.stderr)
+
             normalized_data = {
                 "passage": raw_text,
                 "questionStem": "Chưa nhận diện được cấu trúc câu hỏi tự động. Vui lòng kiểm tra và chỉnh sửa thủ công câu hỏi này.",

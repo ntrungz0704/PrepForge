@@ -21,6 +21,8 @@ export interface Question {
   approvedAt?: string;
   folderId?: string;
   sourceFileId?: string;
+  confidence?: number;
+  parserName?: string;
 }
 
 export interface Highlight {

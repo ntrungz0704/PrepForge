@@ -121,7 +121,9 @@ export const ImportDashboard: React.FC = () => {
                 correctReason: '',
                 choiceReasons: { A: '', B: '', C: '', D: '' }
               },
-              skill: normalizedData.classification?.detectedSkill || folderId
+              skill: normalizedData.classification?.detectedSkill || folderId,
+              confidence: q.confidence !== undefined ? q.confidence : (normalizedData.normalizationMethod === 'local_regex' ? 0.8 : 0.0),
+              parserName: q.parserName || normalizedData.normalizationMethod || 'unknown'
             });
           }
         }
@@ -746,7 +748,22 @@ export const ImportDashboard: React.FC = () => {
         {/* Panel 3: Editor Panel */}
         <div className="card" style={{ padding: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           <div style={{ height: '44px', borderBottom: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', padding: '0 1rem', justifyContent: 'space-between' }}>
-            <strong style={{ fontSize: '0.85rem' }}>AI Structured Question Editor</strong>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <strong style={{ fontSize: '0.85rem' }}>AI Structured Question Editor</strong>
+              {editQuestion?.confidence !== undefined && (
+                <span style={{ 
+                  fontSize: '0.675rem', 
+                  padding: '2px 8px', 
+                  borderRadius: '12px', 
+                  fontWeight: 'bold',
+                  backgroundColor: editQuestion.confidence >= 0.75 ? '#dcfce7' : editQuestion.confidence >= 0.5 ? '#fef9c3' : '#fee2e2',
+                  color: editQuestion.confidence >= 0.75 ? '#15803d' : editQuestion.confidence >= 0.5 ? '#a16207' : '#b91c1c',
+                  border: '1px solid currentColor'
+                }}>
+                  Độ tin cậy: {Math.round(editQuestion.confidence * 100)}% ({editQuestion.parserName})
+                </span>
+              )}
+            </div>
             {editQuestion && (
               <button className="btn btn-primary" style={{ padding: '0 10px', height: '28px', fontSize: '0.75rem' }} onClick={handleApprove}>
                 Duyệt & Lưu đề
@@ -759,6 +776,28 @@ export const ImportDashboard: React.FC = () => {
               <div style={{ background: 'var(--danger-soft)', border: '1px solid var(--danger-border)', color: 'var(--danger)', fontSize: '0.8rem', padding: '8px 12px', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <AlertTriangle size={14} />
                 <span>{validationError}</span>
+              </div>
+            )}
+
+            {editQuestion && editQuestion.confidence !== undefined && editQuestion.confidence < 0.75 && (
+              <div style={{ 
+                background: '#fdf8e2', 
+                border: '1px solid #f5e0a0', 
+                color: '#8a6d3b', 
+                fontSize: '0.8rem', 
+                padding: '10px 14px', 
+                borderRadius: '8px', 
+                display: 'flex', 
+                flexDirection: 'column',
+                gap: '4px' 
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 'bold' }}>
+                  <AlertTriangle size={14} />
+                  <span>Cảnh báo: Độ tin cậy nhận diện thấp ({Math.round(editQuestion.confidence * 100)}%)</span>
+                </div>
+                <span style={{ fontSize: '0.75rem', opacity: 0.85 }}>
+                  Hệ thống tự động phát hiện cấu trúc câu hỏi có thể chưa hoàn chỉnh hoặc sai lệch. Vui lòng kiểm tra, điền nốt các ô trống hoặc chỉnh sửa trực tiếp bên dưới.
+                </span>
               </div>
             )}
 
