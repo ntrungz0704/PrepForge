@@ -432,6 +432,97 @@ app.post('/api/upload', (req, res) => {
   }
 });
 
+// DELETE /api/files - Remove uploaded PDF and all extracted/normalized outputs
+app.delete('/api/files', (req, res) => {
+  const { relativePath, folderId, fileName } = req.body;
+  if (!relativePath) {
+    return res.status(400).json({ error: 'Missing relativePath.' });
+  }
+  try {
+    // 1. Delete actual files from disk
+    const absoluteUploadPath = path.join(rootDir, relativePath);
+    if (fs.existsSync(absoluteUploadPath)) {
+      fs.unlinkSync(absoluteUploadPath);
+    }
+    
+    // Delete extracted text if exists
+    if (folderId && fileName) {
+      const extPath = path.join(rootDir, 'data', 'extracted', folderId, fileName.replace('.pdf', '.extracted.json'));
+      if (fs.existsSync(extPath)) {
+        fs.unlinkSync(extPath);
+      }
+      
+      // Delete normalized json if exists
+      const normPath = path.join(rootDir, 'data', 'normalized', folderId, fileName.replace('.pdf', '.normalized.json'));
+      if (fs.existsSync(normPath)) {
+        fs.unlinkSync(normPath);
+      }
+    }
+
+    // 2. Remove from manifest.json
+    if (fs.existsSync(manifestPath)) {
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+      for (const folder of manifest.folders) {
+        folder.files = folder.files.filter(f => f.relativePath !== relativePath && f.relativePath !== `data/uploads/${relativePath}`);
+      }
+      // Filter out empty folders
+      manifest.folders = manifest.folders.filter(folder => folder.files.length > 0);
+      
+      // Recalculate summary
+      const allFiles = manifest.folders.flatMap(f => f.files);
+      manifest.summary.totalPdfFiles = allFiles.length;
+      manifest.summary.totalFolders = manifest.folders.length;
+      manifest.summary.totalBytes = allFiles.reduce((acc, f) => acc + f.sizeBytes, 0);
+
+      fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8');
+    }
+
+    res.json({ success: true, message: 'File and associated data deleted successfully.' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// POST /api/questions - Add/Update a question manually (no source PDF required)
+app.post('/api/questions', (req, res) => {
+  const question = req.body;
+  if (!question || !question.questionId) {
+    return res.status(400).json({ error: 'Missing question data.' });
+  }
+  try {
+    const db = readDb();
+    const existingIndex = db.questions.findIndex(q => q.questionId === question.questionId);
+    if (existingIndex > -1) {
+      db.questions[existingIndex] = { ...question, approvedAt: new Date().toISOString() };
+    } else {
+      db.questions.push({ ...question, approvedAt: new Date().toISOString() });
+    }
+    writeDb(db);
+    res.json({ success: true, question });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// DELETE /api/questions/:questionId - Remove question entirely from db.json
+app.delete('/api/questions/:questionId', (req, res) => {
+  const { questionId } = req.params;
+  try {
+    const db = readDb();
+    const originalLength = db.questions.length;
+    db.questions = db.questions.filter(q => q.questionId !== questionId);
+    
+    if (db.questions.length === originalLength) {
+      return res.status(404).json({ error: 'Question not found.' });
+    }
+    
+    writeDb(db);
+    res.json({ success: true, message: 'Question deleted successfully.' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // POST trigger AI normalization (async)
 app.post('/api/normalize', (req, res) => {
   const pythonPath = path.join(rootDir, '.venv', 'Scripts', 'python');

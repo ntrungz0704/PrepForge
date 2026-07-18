@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { 
   Play, Edit3, Folder, FileText, ChevronRight, ChevronDown, Check, AlertTriangle, CheckSquare,
-  UploadCloud, FileUp, FolderPlus
+  UploadCloud, FileUp, FolderPlus, Trash2
 } from 'lucide-react';
 import type { Question } from '../store/practiceStore';
 
@@ -130,6 +130,44 @@ export const ImportDashboard: React.FC = () => {
       }
     } catch (err) {
       console.error('Error loading file details:', err);
+    }
+  };
+
+  const handleDeleteFile = async (folderId: string, file: FileInfo, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!window.confirm(`Bạn có chắc chắn muốn loại bỏ tệp tin này khỏi hệ thống không?\n${file.fileName}`)) return;
+    
+    try {
+      setLoading(true);
+      setActionMessage(`Đang xóa tệp ${file.fileName}...`);
+      
+      const res = await fetch('http://localhost:5000/api/files', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          relativePath: file.relativePath,
+          folderId,
+          fileName: file.fileName
+        })
+      });
+      
+      if (res.ok) {
+        setActionMessage(`Đã xóa tệp ${file.fileName} thành công!`);
+        await fetchManifest();
+        if (selectedFile?.sha256 === file.sha256) {
+          setSelectedFile(null);
+          setRawText('');
+          setEditQuestion(null);
+        }
+      } else {
+        const errData = await res.json();
+        setActionMessage(`Lỗi khi xóa tệp: ${errData.error}`);
+      }
+    } catch (err) {
+      console.error(err);
+      setActionMessage('Lỗi kết nối khi xóa tệp.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -697,33 +735,64 @@ export const ImportDashboard: React.FC = () => {
                         else if (file.status === 'failed') statusColor = 'var(--danger)';
 
                         return (
-                          <button
+                          <div
                             key={file.sha256}
-                            onClick={() => handleSelectFile(folder.folderId, file)}
                             style={{ 
                               display: 'flex', 
                               alignItems: 'center', 
                               gap: '6px', 
                               background: isFileSelected ? 'var(--primary-soft)' : 'none', 
-                              border: 'none', 
-                              cursor: 'pointer', 
-                              padding: '5px 8px', 
                               borderRadius: '6px',
-                              textAlign: 'left', 
-                              fontSize: '0.8rem',
-                              color: isFileSelected ? 'var(--primary)' : 'var(--text-secondary)'
+                              padding: '2px 6px',
+                              color: isFileSelected ? 'var(--primary)' : 'var(--text-secondary)',
+                              justifyContent: 'space-between'
                             }}
                           >
-                            <FileText size={12} />
-                            <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '160px' }}>{file.fileName}</span>
-                            <span style={{ 
-                              marginLeft: 'auto', 
-                              width: '6px', 
-                              height: '6px', 
-                              borderRadius: '50%', 
-                              backgroundColor: statusColor 
-                            }} title={file.status}></span>
-                          </button>
+                            <button
+                              onClick={() => handleSelectFile(folder.folderId, file)}
+                              style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '6px',
+                                background: 'none',
+                                border: 'none',
+                                cursor: 'pointer',
+                                padding: '4px 0',
+                                textAlign: 'left',
+                                fontSize: '0.8rem',
+                                color: 'inherit',
+                                flex: 1,
+                                overflow: 'hidden'
+                              }}
+                            >
+                              <FileText size={12} style={{ flexShrink: 0 }} />
+                              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '140px' }}>{file.fileName}</span>
+                              <span style={{ 
+                                marginLeft: '6px', 
+                                width: '6px', 
+                                height: '6px', 
+                                borderRadius: '50%', 
+                                backgroundColor: statusColor,
+                                flexShrink: 0
+                              }} title={file.status}></span>
+                            </button>
+                            <button
+                              onClick={(e) => handleDeleteFile(folder.folderId, file, e)}
+                              style={{
+                                background: 'none',
+                                border: 'none',
+                                cursor: 'pointer',
+                                display: 'flex',
+                                alignItems: 'center',
+                                padding: '4px',
+                                color: '#f87171',
+                                borderRadius: '4px',
+                              }}
+                              title="Loại bỏ tệp"
+                            >
+                              <Trash2 size={12} />
+                            </button>
+                          </div>
                         );
                       })}
                     </div>

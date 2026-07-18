@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Search, Filter, Archive, BookOpen, X } from 'lucide-react';
+import { Search, Filter, Archive, BookOpen, X, Plus, Trash2 } from 'lucide-react';
 import type { Question } from '../../store/practiceStore';
 
 interface QuestionBankProps {
@@ -96,6 +96,22 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ onStartSingleQuestio
     if (!editForm || !activeQuestion) return;
 
     try {
+      // If it is a manual question, save directly to POST /api/questions
+      if (activeQuestion.questionId.startsWith('q-manual-')) {
+        const res = await fetch('http://localhost:5000/api/questions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(editForm)
+        });
+        if (res.ok) {
+          alert('Lưu câu hỏi thủ công thành công!');
+          setEditMode(false);
+          setActiveQuestion(editForm as Question);
+          fetchQuestions();
+        }
+        return;
+      }
+
       const manifestRes = await fetch('http://localhost:5000/api/manifest');
       let relativePath = '';
       if (manifestRes.ok) {
@@ -131,6 +147,46 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ onStartSingleQuestio
     } catch (err) {
       console.error('Error updating question:', err);
     }
+  };
+
+  const handleDeleteQuestion = async (question: Question) => {
+    if (!window.confirm('Bạn có chắc chắn muốn XÓA HOÀN TOÀN câu hỏi này khỏi ngân hàng câu hỏi không? Thao tác này không thể khôi phục.')) return;
+    try {
+      const res = await fetch(`http://localhost:5000/api/questions/${question.questionId}`, {
+        method: 'DELETE'
+      });
+      if (res.ok) {
+        alert('Đã xóa câu hỏi khỏi ngân hàng câu hỏi!');
+        setActiveQuestion(null);
+        fetchQuestions();
+      }
+    } catch (err) {
+      console.error('Error deleting question:', err);
+    }
+  };
+
+  const handleCreateManualQuestion = () => {
+    const newQ: Question = {
+      questionId: `q-manual-${Date.now()}`,
+      passage: '',
+      questionStem: '',
+      choices: [
+        { label: 'A', text: '' },
+        { label: 'B', text: '' },
+        { label: 'C', text: '' },
+        { label: 'D', text: '' }
+      ],
+      correctAnswer: 'A',
+      explanation: {
+        correctReason: '',
+        choiceReasons: { A: '', B: '', C: '', D: '' }
+      },
+      skill: skills[0] || 'General',
+      approvedAt: new Date().toISOString()
+    };
+    setActiveQuestion(newQ);
+    setEditForm(newQ);
+    setEditMode(true);
   };
 
   // Get dynamic categories list
@@ -176,6 +232,14 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ onStartSingleQuestio
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>Kho dữ liệu câu hỏi trắc nghiệm SAT đã được duyệt lưu trữ.</p>
         </div>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <button 
+            className="btn btn-primary"
+            style={{ fontSize: '0.85rem', height: '38px', display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#10b981', borderColor: '#10b981' }}
+            onClick={handleCreateManualQuestion}
+          >
+            <Plus size={16} />
+            Tạo câu hỏi thủ công
+          </button>
           <button 
             className={`btn ${!showArchived ? 'btn-primary' : 'btn-secondary'}`}
             style={{ fontSize: '0.85rem', height: '38px' }}
@@ -388,6 +452,22 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ onStartSingleQuestio
                     <option value="D">D</option>
                   </select>
                 </div>
+                {/* Skill */}
+                <div className="form-group">
+                  <label className="form-label">Kỹ năng (Skill)</label>
+                  <select 
+                    className="select" 
+                    value={editForm.skill || ''}
+                    onChange={e => setEditForm({ ...editForm, skill: e.target.value })}
+                  >
+                    {skills.map(sk => (
+                      <option key={sk} value={sk}>{sk}</option>
+                    ))}
+                    {!skills.includes(editForm.skill || '') && editForm.skill && (
+                      <option value={editForm.skill}>{editForm.skill}</option>
+                    )}
+                  </select>
+                </div>
                 {/* Correct Reason */}
                 <div className="form-group">
                   <label className="form-label">Lời giải thích</label>
@@ -452,6 +532,14 @@ export const QuestionBank: React.FC<QuestionBankProps> = ({ onStartSingleQuestio
                 </>
               ) : (
                 <>
+                  <button 
+                    className="btn btn-secondary" 
+                    style={{ backgroundColor: '#fee2e2', borderColor: '#fca5a5', color: '#b91c1c', marginRight: 'auto', display: 'flex', alignItems: 'center', gap: '4px' }}
+                    onClick={() => handleDeleteQuestion(activeQuestion)}
+                  >
+                    <Trash2 size={16} />
+                    Xóa câu hỏi
+                  </button>
                   <button className="btn btn-secondary" onClick={() => setEditMode(true)}>Sửa nội dung</button>
                   {!showArchived && (
                     <button className="btn btn-primary" onClick={() => {
